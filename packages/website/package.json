@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "docker": "docker build . -t albondad/portfolio",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
