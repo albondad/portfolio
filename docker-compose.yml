@@ -4,4 +4,6 @@ services:
     ports:
       - "3000:3000"
     volumes:
+      - "./packages/website/common:/usr/src/app/common"
       - "./packages/website/pages:/usr/src/app/pages"
+      - "./packages/website/node_modules:/usr/src/app/node_modules"
