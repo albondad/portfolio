@@ -1,9 +1,16 @@
+import { Fragment } from 'react';
 import type { NextPage } from 'next'
-import { NavigationBar } from '../common';
+import {
+  Banner,
+  NavigationBar
+} from '../common';
 
 const Home: NextPage = () => {
   return (
-    <NavigationBar />
+    <Fragment>
+      <NavigationBar />
+      <Banner />
+    </Fragment>
   )
 }
 
