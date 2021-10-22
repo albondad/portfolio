@@ -8,6 +8,8 @@ export const Banner = styled.div`
 
 export const BannerMain = styled.div`
     display: flex;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 100rem;
     padding-right: 4rem;
     padding-left: 4rem;
