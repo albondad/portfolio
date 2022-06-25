@@ -2,8 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "docker-compose up"
-  }
+  "repository": "https://github.com/albondad/portfolio.git",
+  "author": "Al Bondad <albondad@gmail.com>",
+  "license": "MIT"
 }
