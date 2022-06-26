@@ -13,9 +13,16 @@ export const Button = ({
     <Box
       className={classNames("Button", classNameProp)}
       styles={`
-        background-color: #ffffff;
-        border-radius: 0.5rem;
-        padding: 0.75rem;
+        & {
+          background-color: #ffffff;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          padding: 0.75rem;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
 
         ${stylesProp}
       `}
