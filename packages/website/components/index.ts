@@ -4,6 +4,7 @@ export * from "./icon";
 export * from "./introduction-section-actions";
 export * from "./introduction-section-container";
 export * from "./introduction-section-description";
+export * from "./introduction-section";
 export * from "./navigation-bar-brand";
 export * from "./navigation-bar-container";
 export * from "./navigation-bar-link";
