@@ -1,12 +1,17 @@
 import type { NextPage } from "next";
 import { Fragment } from "react";
-import { NavigationBar, IntroductionSection } from "../components";
+import {
+  ExperienceAndProjectsCard,
+  IntroductionSection,
+  NavigationBar,
+} from "../components";
 
 const Home: NextPage = () => {
   return (
     <Fragment>
       <NavigationBar />
       <IntroductionSection />
+      <ExperienceAndProjectsCard />
     </Fragment>
   );
 };

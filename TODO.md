@@ -1,3 +1,6 @@
-- add button component (done)
-- add IntroductionSectionActions component
+- Add Button component (done)
+- Add IntroductionSectionActions component (done)
+- Update Button component (done)
+- Update IntroductionSect
+- Set Up ExperienceAndProjectsCard component
 -

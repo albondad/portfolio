@@ -1,5 +1,6 @@
 export * from "./box";
 export * from "./button";
+export * from "./experience-and-project-card";
 export * from "./icon";
 export * from "./introduction-section-actions";
 export * from "./introduction-section-container";
