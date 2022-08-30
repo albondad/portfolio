@@ -22,7 +22,7 @@ export const StyledBox = styled(Box)`
     border-radius: 0.5rem;
   }
 
-  & .Hero-title {
+  & .Hero-heading {
     color: #ffffff;
     font-size: 2rem;
     font-weight: 700;

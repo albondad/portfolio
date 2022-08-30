@@ -20,7 +20,7 @@ export const Hero = ({
         <Box className="Hero-image" />
 
         <Box className="Hero-text">
-          <Box className="Hero-title">SOFTWARE DEVELOPER</Box>
+          <Box className="Hero-heading">SOFTWARE DEVELOPER</Box>
           <Box className="Hero-description">
             Hi there, thanks for dropping by! A little bit about me, I’m a web
             developer based in Illinois with a couple years of experience. I’ve
