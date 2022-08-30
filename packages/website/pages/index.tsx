@@ -1,19 +1,14 @@
 import type { NextPage } from "next";
 import { Fragment } from "react";
-import {
-  ExperienceAndProjectsCard,
-  IntroductionSection,
-  NavigationBar,
-} from "../components";
+import { Hero, NavigationBar } from "../components";
 
-const Home: NextPage = () => {
+const IndexPage: NextPage = () => {
   return (
     <Fragment>
       <NavigationBar />
-      <IntroductionSection />
-      <ExperienceAndProjectsCard />
+      <Hero />
     </Fragment>
   );
 };
 
-export default Home;
+export default IndexPage;

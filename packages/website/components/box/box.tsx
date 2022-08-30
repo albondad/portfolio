@@ -1,24 +1,17 @@
-import * as boxStyledComponents from "./box.styled-components";
+import { StyledDiv } from "./box.styled-components";
 import classNames from "classnames";
-import React, { ElementType, ReactNode, ComponentProps } from "react";
-import styled, { StyledComponent } from "styled-components";
+import React, { ComponentProps, useMemo } from "react";
 
-export type BoxPropsType = ComponentProps<typeof boxStyledComponents.Box> & {
-  styles?: string;
-};
+export type BoxPropsType = ComponentProps<typeof StyledDiv> & {};
 
 export const Box = ({
-  styles: stylesProp,
   className: classNameProp,
   ...restProps
 }: BoxPropsType) => {
-  styled("div");
+  const classNameMemo = useMemo(() => {
+    const newClassNameMemo = classNames("Box", classNameProp);
+    return newClassNameMemo;
+  }, [classNameProp]);
 
-  return (
-    <boxStyledComponents.Box
-      className={classNames("Box", classNameProp)}
-      styles={stylesProp}
-      {...restProps}
-    />
-  );
+  return <StyledDiv className={classNameMemo} {...restProps} />;
 };

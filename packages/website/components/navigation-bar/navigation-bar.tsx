@@ -1,28 +1,28 @@
-import React from "react";
+import { Box } from "..";
+import { StyledBox } from "./navigation-bar.styled-components";
 import classNames from "classnames";
-import {
-  NavigationBarBrand,
-  NavigationBarContainer,
-  NavigationBarContainerPropsType,
-  NavigationBarLink,
-  Button,
-} from "..";
+import React, { ComponentProps, useMemo } from "react";
 
-export type NavigationBarPropsType = NavigationBarContainerPropsType & {};
+export type NavigationBarPropsType = ComponentProps<typeof StyledBox> & {};
 
 export const NavigationBar = ({
   className: classNameProp,
   ...restProps
-}: NavigationBarContainerPropsType) => {
+}: NavigationBarPropsType) => {
+  const classNameMemo = useMemo(() => {
+    const newClassNameMemo = classNames("NavigationBar-root", classNameProp);
+    return newClassNameMemo;
+  }, [classNameProp]);
+
   return (
-    <NavigationBarContainer
-      className={classNames("NavigationBar", classNameProp)}
-      {...restProps}
-    >
-      <NavigationBarBrand>AL Bondad</NavigationBarBrand>
-      <NavigationBarLink>Home</NavigationBarLink>
-      <NavigationBarLink>Contact</NavigationBarLink>
-      <NavigationBarLink>Blog</NavigationBarLink>
-    </NavigationBarContainer>
+    <StyledBox className={classNameMemo} {...restProps}>
+      <Box className="NavigationBar-mainContent">
+        <Box className="NavigationBar-logo">AL BONDAD</Box>
+        <Box className="NavigationBar-links">
+          <Box className="NavigationBar-linkItem">Home</Box>
+          <Box className="NavigationBar-linkItem">Contact Us</Box>
+        </Box>
+      </Box>
+    </StyledBox>
   );
 };
