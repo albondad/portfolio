@@ -1,19 +1,19 @@
 import { SvgIcon } from "..";
-import { StyledBox } from "./teeny-icons-linked-in-icon.styled-components";
+import { StyledBox } from "./teenyicons-linked-in-icon.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 
-export type TeenyIconsLinkedInIconPropsType = ComponentProps<
+export type TeenyiconsLinkedInIconPropsType = ComponentProps<
   typeof StyledBox
 > & {};
 
-export const TeenyIconsLinkedInIcon = ({
+export const TeenyiconsLinkedInIcon = ({
   className: classNameProp,
   ...restProps
-}: TeenyIconsLinkedInIconPropsType) => {
+}: TeenyiconsLinkedInIconPropsType) => {
   const classNameMemo = useMemo(() => {
     const newClassNameMemo = classNames(
-      "TeenyIconsLinkedInIcon-root",
+      "TeenyiconsLinkedInIcon-root",
       classNameProp
     );
     return newClassNameMemo;

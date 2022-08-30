@@ -1,4 +1,9 @@
-import { Button, TeenyIconsTextDocumentIcon, TeenyIconsLinkedInIcon } from "..";
+import {
+  Button,
+  TeenyiconsTextDocumentIcon,
+  TeenyiconsLinkedInIcon,
+  TeenyiconsGithubIcon,
+} from "..";
 import { StyledBox } from "./social-media-buttons.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -20,12 +25,14 @@ export const SocialMediaButtons = ({
   return (
     <StyledBox className={classNameMemo} {...restProps}>
       <Button>
-        <TeenyIconsTextDocumentIcon />
+        <TeenyiconsTextDocumentIcon />
       </Button>
       <Button>
-        <TeenyIconsLinkedInIcon />
+        <TeenyiconsLinkedInIcon />
       </Button>
-      <Button></Button>
+      <Button>
+        <TeenyiconsGithubIcon />
+      </Button>
     </StyledBox>
   );
 };
