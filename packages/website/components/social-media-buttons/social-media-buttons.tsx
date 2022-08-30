@@ -1,4 +1,4 @@
-import { Button } from "..";
+import { Button, TeenyIconsTextDocumentIcon } from "..";
 import { StyledBox } from "./social-media-buttons.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -19,7 +19,9 @@ export const SocialMediaButtons = ({
 
   return (
     <StyledBox className={classNameMemo} {...restProps}>
-      <Button></Button>
+      <Button>
+        <TeenyIconsTextDocumentIcon />
+      </Button>
       <Button></Button>
       <Button></Button>
     </StyledBox>

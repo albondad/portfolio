@@ -11,6 +11,8 @@ export const SvgIcon = ({
   className: classNameProp,
   viewBoxProp: viewBoxProp = "0 0 24 24",
   xmlns: xmlnsProp,
+  width: widthProp = "24",
+  height: heightProp = "24",
   as: asProp = "svg",
   ...restProps
 }: SvgIconPropsType) => {
@@ -24,7 +26,9 @@ export const SvgIcon = ({
       {...restProps}
       as={asProp}
       className={classNameMemo}
+      height={heightProp}
       viewBox={viewBoxProp}
+      width={widthProp}
       xmlns={xmlnsProp}
     />
   );
