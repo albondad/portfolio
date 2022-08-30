@@ -1,4 +1,4 @@
-import { Button, TeenyIconsTextDocumentIcon } from "..";
+import { Button, TeenyIconsTextDocumentIcon, TeenyIconsLinkedInIcon } from "..";
 import { StyledBox } from "./social-media-buttons.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -22,7 +22,9 @@ export const SocialMediaButtons = ({
       <Button>
         <TeenyIconsTextDocumentIcon />
       </Button>
-      <Button></Button>
+      <Button>
+        <TeenyIconsLinkedInIcon />
+      </Button>
       <Button></Button>
     </StyledBox>
   );
