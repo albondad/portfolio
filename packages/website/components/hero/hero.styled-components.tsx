@@ -17,9 +17,11 @@ export const StyledBox = styled(Box)`
 
   & .Hero-image {
     background-color: #cccccc;
-    height: 16rem;
-    width: 16rem;
     border-radius: 0.5rem;
+    height: 16rem;
+    overflow: hidden;
+    position: relative;
+    width: 16rem;
   }
 
   & .Hero-heading {
@@ -30,16 +32,16 @@ export const StyledBox = styled(Box)`
   }
 
   & .Hero-description {
+    color: #ffffff;
     font-size: 1.25em;
     line-height: 1.5em;
-    color: #ffffff;
     max-width: 32rem;
   }
 
   & .Hero-actions {
-    color: #ffffff;
-    margin-left: auto;
-    display: flex;
     align-items: flex-end;
+    color: #ffffff;
+    display: flex;
+    margin-left: auto;
   }
 `;

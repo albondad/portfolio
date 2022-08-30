@@ -2,6 +2,8 @@ import { Box, SocialMediaButtons } from "..";
 import { StyledBox } from "./hero.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
+import Image from "next/image";
+import portaitImage from "../../images/portait.png";
 
 export type HeroPropsType = ComponentProps<typeof StyledBox> & {};
 
@@ -17,7 +19,9 @@ export const Hero = ({
   return (
     <StyledBox className={classNameMemo} {...restProps}>
       <Box className="Hero-mainContent">
-        <Box className="Hero-image" />
+        <Box className="Hero-image">
+          <Image src={portaitImage} layout="fill" alt="portait image" />
+        </Box>
 
         <Box className="Hero-text">
           <Box className="Hero-heading">SOFTWARE DEVELOPER</Box>
