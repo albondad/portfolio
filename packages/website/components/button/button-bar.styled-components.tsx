@@ -3,9 +3,11 @@ import { Box } from "..";
 
 export const StyledBox = styled(Box)`
   & {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
     height: 3rem;
-    minwidth: 3rem;
-    backgroundcolor: #ffffff;
+    min-width: 3rem;
   }
 
   &:hover {

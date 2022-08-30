@@ -1,4 +1,4 @@
-import { Box } from "..";
+import { Box, SocialMediaButtons } from "..";
 import { StyledBox } from "./hero.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -30,7 +30,7 @@ export const Hero = ({
           </Box>
         </Box>
 
-        <Box className="Hero-actions">test</Box>
+        <SocialMediaButtons className="Hero-actions">test</SocialMediaButtons>
       </Box>
 
       <Box className="Hero-actions"></Box>
