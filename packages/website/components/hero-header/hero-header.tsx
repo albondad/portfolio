@@ -1,31 +1,31 @@
 import { Box, SocialMediaButtons } from "..";
-import { StyledBox } from "./hero.styled-components";
+import { StyledBox } from "./hero-header.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 import Image from "next/image";
 import portaitImage from "../../images/portait.png";
 
-export type HeroPropsType = ComponentProps<typeof StyledBox> & {};
+export type HeroHeaderPropsType = ComponentProps<typeof StyledBox> & {};
 
-export const Hero = ({
+export const HeroHeader = ({
   className: classNameProp,
   ...restProps
-}: HeroPropsType) => {
+}: HeroHeaderPropsType) => {
   const classNameMemo = useMemo(() => {
-    const newClassNameMemo = classNames("Hero-root", classNameProp);
+    const newClassNameMemo = classNames("HeroHeader-root", classNameProp);
     return newClassNameMemo;
   }, [classNameProp]);
 
   return (
     <StyledBox className={classNameMemo} {...restProps}>
-      <Box className="Hero-mainContent">
-        <Box className="Hero-image">
+      <Box className="HeroHeader-mainContent">
+        <Box className="HeroHeader-image">
           <Image src={portaitImage} layout="fill" alt="portait image" />
         </Box>
 
-        <Box className="Hero-text">
-          <Box className="Hero-heading">SOFTWARE DEVELOPER</Box>
-          <Box className="Hero-description">
+        <Box className="HeroHeader-text">
+          <Box className="HeroHeader-heading">SOFTWARE DEVELOPER</Box>
+          <Box className="HeroHeader-description">
             Hi there, thanks for dropping by! A little bit about me, I’m a web
             developer based in Illinois with a couple years of experience. I’ve
             worked as a software developer in small companies, startups, and
@@ -34,10 +34,12 @@ export const Hero = ({
           </Box>
         </Box>
 
-        <SocialMediaButtons className="Hero-actions">test</SocialMediaButtons>
+        <SocialMediaButtons className="HeroHeader-actions">
+          test
+        </SocialMediaButtons>
       </Box>
 
-      <Box className="Hero-actions"></Box>
+      <Box className="HeroHeader-actions"></Box>
     </StyledBox>
   );
 };

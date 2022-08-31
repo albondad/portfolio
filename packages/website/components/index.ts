@@ -1,6 +1,6 @@
 export * from "./box";
 export * from "./button";
-export * from "./hero";
+export * from "./hero-header";
 export * from "./navigation-bar";
 export * from "./social-media-buttons";
 export * from "./svg-icon";

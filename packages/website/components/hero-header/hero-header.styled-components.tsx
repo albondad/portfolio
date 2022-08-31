@@ -7,7 +7,7 @@ export const StyledBox = styled(Box)`
     padding: 6rem 0;
   }
 
-  & .Hero-mainContent {
+  & .HeroHeader-mainContent {
     display: flex;
     gap: 1.25rem;
     margin-left: auto;
@@ -15,7 +15,7 @@ export const StyledBox = styled(Box)`
     max-width: 100rem;
   }
 
-  & .Hero-image {
+  & .HeroHeader-image {
     background-color: #cccccc;
     border-radius: 0.5rem;
     height: 16rem;
@@ -24,21 +24,21 @@ export const StyledBox = styled(Box)`
     width: 16rem;
   }
 
-  & .Hero-heading {
+  & .HeroHeader-heading {
     color: #ffffff;
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.5em;
   }
 
-  & .Hero-description {
+  & .HeroHeader-description {
     color: #ffffff;
     font-size: 1.25em;
     line-height: 1.5em;
     max-width: 32rem;
   }
 
-  & .Hero-actions {
+  & .HeroHeader-actions {
     align-items: flex-end;
     color: #ffffff;
     display: flex;
