@@ -11,3 +11,4 @@ export * from "./teenyicons-github-icon";
 export * from "./teenyicons-linked-in-icon";
 export * from "./teenyicons-text-document-icon";
 export * from "./education-and-certifications-card-list";
+export * from "./space";
