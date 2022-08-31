@@ -2,6 +2,7 @@ export * from "./box";
 export * from "./button";
 export * from "./card-list";
 export * from "./card";
+export * from "./experience-and-projects-card-list";
 export * from "./hero-header";
 export * from "./navigation-bar";
 export * from "./social-media-buttons";

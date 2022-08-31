@@ -1,13 +1,17 @@
 import type { NextPage } from "next";
 import { Fragment } from "react";
-import { HeroHeader, NavigationBar, Card, CardList } from "../components";
+import {
+  HeroHeader,
+  NavigationBar,
+  ExperienceAndProjectsCardList,
+} from "../components";
 
 const IndexPage: NextPage = () => {
   return (
     <Fragment>
       <NavigationBar />
       <HeroHeader />
-      <CardList />
+      <ExperienceAndProjectsCardList />
     </Fragment>
   );
 };

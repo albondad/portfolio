@@ -3,10 +3,13 @@ import { StyledBox } from "./card-list.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 
-export type CardListPropsType = ComponentProps<typeof StyledBox> & {};
+export type CardListPropsType = ComponentProps<typeof StyledBox> & {
+  heading?: string;
+};
 
 export const CardList = ({
   className: classNameProp,
+  heading: headingProp,
   ...restProps
 }: CardListPropsType) => {
   const classNameMemo = useMemo(() => {
@@ -17,7 +20,7 @@ export const CardList = ({
   return (
     <StyledBox className={classNameMemo} {...restProps}>
       <Box className="CardList-mainContent">
-        <Box className="CardList-heading">Heading</Box>
+        <Box className="CardList-heading">{headingProp}</Box>
         <Box className="CardList-list">
           <Box className="CardList-item">
             <Card />
