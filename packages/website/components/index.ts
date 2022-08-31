@@ -7,3 +7,4 @@ export * from "./svg-icon";
 export * from "./teenyicons-text-document-icon";
 export * from "./teenyicons-linked-in-icon";
 export * from "./teenyicons-github-icon";
+export * from "./card";
