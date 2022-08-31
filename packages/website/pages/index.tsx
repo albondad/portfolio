@@ -4,6 +4,7 @@ import {
   HeroHeader,
   NavigationBar,
   ExperienceAndProjectsCardList,
+  EducationAndCertifcationsCardlist,
 } from "../components";
 
 const IndexPage: NextPage = () => {
@@ -12,6 +13,7 @@ const IndexPage: NextPage = () => {
       <NavigationBar />
       <HeroHeader />
       <ExperienceAndProjectsCardList />
+      <EducationAndCertifcationsCardlist />
     </Fragment>
   );
 };
