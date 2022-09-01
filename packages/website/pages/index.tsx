@@ -6,6 +6,7 @@ import {
   ExperienceAndProjectsCardList,
   EducationAndCertifcationsCardlist,
   Space,
+  Skill,
 } from "../components";
 
 const IndexPage: NextPage = () => {
@@ -18,6 +19,7 @@ const IndexPage: NextPage = () => {
       <Space size="large" />
       <EducationAndCertifcationsCardlist />
       <Space />
+      <Skill />
     </Fragment>
   );
 };

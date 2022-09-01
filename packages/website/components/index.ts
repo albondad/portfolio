@@ -7,6 +7,7 @@ export * from "./education-and-certifications-card-list";
 export * from "./experience-and-projects-card-list";
 export * from "./hero-header";
 export * from "./navigation-bar";
+export * from "./skill";
 export * from "./social-media-buttons";
 export * from "./space";
 export * from "./svg-icon";
