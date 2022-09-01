@@ -5,6 +5,7 @@ import {
   NavigationBar,
   ExperienceAndProjectsCardList,
   EducationAndCertifcationsCardList,
+  SkillList,
   Space,
   Skill,
 } from "../components";
@@ -19,7 +20,7 @@ const IndexPage: NextPage = () => {
       <Space size="large" />
       <EducationAndCertifcationsCardList />
       <Space />
-      <Skill />
+      <SkillList />
     </Fragment>
   );
 };

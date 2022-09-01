@@ -17,7 +17,7 @@ export const Skill = ({
   return (
     <StyledBox className={classNameMemo} {...restProps}>
       <Box className="Skill-image">image</Box>
-      <Box className="Skill-label">Detail</Box>
+      <Box className="Skill-label">label</Box>
     </StyledBox>
   );
 };

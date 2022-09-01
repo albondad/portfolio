@@ -12,9 +12,10 @@ export const StyledBox = styled(Box)`
       width: 4rem;
     }
 
-    .Skill-detail {
+    .Skill-label {
       font-size: 1rem;
       margin-top: 0.5rem;
+      text-align: center;
     }
   }
 `;
