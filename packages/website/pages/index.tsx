@@ -21,6 +21,7 @@ const IndexPage: NextPage = () => {
       <EducationAndCertifcationsCardList />
       <Space />
       <SkillList />
+      <Space />
     </Fragment>
   );
 };
