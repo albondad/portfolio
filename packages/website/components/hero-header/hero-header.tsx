@@ -1,9 +1,9 @@
-import { Box, SocialMediaButtons } from "..";
+import { Box, SocialMediaButtons, ConstrainedContent } from "..";
 import { StyledBox } from "./hero-header.styled-components";
 import classNames from "classnames";
-import React, { ComponentProps, useMemo } from "react";
 import Image from "next/image";
 import portaitImage from "../../images/portait.png";
+import React, { ComponentProps, useMemo } from "react";
 
 export type HeroHeaderPropsType = ComponentProps<typeof StyledBox> & {};
 
@@ -18,7 +18,7 @@ export const HeroHeader = ({
 
   return (
     <StyledBox className={classNameMemo} {...restProps}>
-      <Box className="HeroHeader-mainContent">
+      <ConstrainedContent className="HeroHeader-constrainedContent">
         <Box className="HeroHeader-image">
           <Image src={portaitImage} layout="fill" alt="portait image" />
         </Box>
@@ -34,12 +34,10 @@ export const HeroHeader = ({
           </Box>
         </Box>
 
-        <SocialMediaButtons className="HeroHeader-actions">
-          test
-        </SocialMediaButtons>
-      </Box>
-
-      <Box className="HeroHeader-actions"></Box>
+        <Box className="HeroHeader-actions">
+          <SocialMediaButtons>test</SocialMediaButtons>
+        </Box>
+      </ConstrainedContent>
     </StyledBox>
   );
 };

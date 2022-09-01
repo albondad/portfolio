@@ -3,10 +3,6 @@ import { Box } from "..";
 
 export const StyledBox = styled(Box)`
   & .CardList-mainContent {
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-
     .CardList-heading {
       font-size: 1.5rem;
       font-weight: 700;
@@ -15,12 +11,12 @@ export const StyledBox = styled(Box)`
 
     .CardList-list {
       display: flex;
-      flex-wrap: wrap;
       gap: 1.25rem;
+      flex-wrap: wrap;
       margin-top: 1.25rem;
 
       .CardList-item {
-        width: calc((100% - 1.25rem * 4) / 4);
+        width: calc((100% - 1.25rem * 3) / 4);
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Box } from "..";
+import { Box, ConstrainedContent } from "..";
 import { StyledBox } from "./navigation-bar.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -16,13 +16,13 @@ export const NavigationBar = ({
 
   return (
     <StyledBox className={classNameMemo} {...restProps}>
-      <Box className="NavigationBar-mainContent">
+      <ConstrainedContent className="NavigationBar-constrainedContent">
         <Box className="NavigationBar-logo">AL BONDAD</Box>
         <Box className="NavigationBar-links">
-          <Box className="NavigationBar-linkItem">Home</Box>
-          <Box className="NavigationBar-linkItem">Contact Us</Box>
+          <Box className="NavigationBar-item">Home</Box>
+          <Box className="NavigationBar-item">Contact Us</Box>
         </Box>
-      </Box>
+      </ConstrainedContent>
     </StyledBox>
   );
 };

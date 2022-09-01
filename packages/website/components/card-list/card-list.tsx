@@ -1,4 +1,4 @@
-import { Box, Card } from "..";
+import { Box, Card, ConstrainedContent } from "..";
 import { StyledBox } from "./card-list.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -19,7 +19,7 @@ export const CardList = ({
 
   return (
     <StyledBox className={classNameMemo} {...restProps}>
-      <Box className="CardList-mainContent">
+      <ConstrainedContent className="CardList-mainContent">
         <Box className="CardList-heading">{headingProp}</Box>
         <Box className="CardList-list">
           <Box className="CardList-item">
@@ -47,7 +47,7 @@ export const CardList = ({
             <Card />
           </Box>
         </Box>
-      </Box>
+      </ConstrainedContent>
     </StyledBox>
   );
 };
