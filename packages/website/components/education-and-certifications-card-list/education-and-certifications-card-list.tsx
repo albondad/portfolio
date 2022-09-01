@@ -6,13 +6,13 @@ export type EducationAndCertificationsCardListPropsType = ComponentProps<
   typeof StyledCardList
 > & {};
 
-export const EducationAndCertifcationsCardlist = ({
+export const EducationAndCertifcationsCardList = ({
   className: classNameProp,
   ...restProps
 }: EducationAndCertificationsCardListPropsType) => {
   const classNameMemo = useMemo(() => {
     const newClassNameMemo = classNames(
-      "EducationAndCertifcationsCardlist-root",
+      "EducationAndCertifcationsCardList-root",
       classNameProp
     );
     return newClassNameMemo;

@@ -4,7 +4,7 @@ import {
   HeroHeader,
   NavigationBar,
   ExperienceAndProjectsCardList,
-  EducationAndCertifcationsCardlist,
+  EducationAndCertifcationsCardList,
   Space,
   Skill,
 } from "../components";
@@ -17,7 +17,7 @@ const IndexPage: NextPage = () => {
       <Space />
       <ExperienceAndProjectsCardList />
       <Space size="large" />
-      <EducationAndCertifcationsCardlist />
+      <EducationAndCertifcationsCardList />
       <Space />
       <Skill />
     </Fragment>
