@@ -4,7 +4,7 @@ import { Box } from "..";
 export const StyledBox = styled(Box)`
   & {
     background-color: #000000;
-    padding: 6rem 0;
+    padding: 4rem 0;
 
     .HeroHeader-constrainedContent {
       display: flex;
@@ -21,15 +21,16 @@ export const StyledBox = styled(Box)`
 
       .HeroHeader-heading {
         color: #ffffff;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
-        line-height: 1.5em;
+        line-height: 1.5rem;
       }
 
       .HeroHeader-description {
         color: #ffffff;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         line-height: 1.5em;
+        margin-top: 0.5rem;
         max-width: 32rem;
       }
 

@@ -17,10 +17,13 @@ const IndexPage: NextPage = () => {
       <HeroHeader />
       <Space />
       <ExperienceAndProjectsCardList />
-      <Space size="large" />
+      <Space />
+      <Space />
       <EducationAndCertifcationsCardList />
       <Space />
+      <Space />
       <SkillList />
+      <Space />
       <Space />
       <Footer />
     </Fragment>

@@ -3,6 +3,6 @@ import { Box } from "..";
 
 export const StyledBox = styled(Box)`
   & {
-    height: 8rem;
+    height: 4rem;
   }
 `;

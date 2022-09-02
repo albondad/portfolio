@@ -8,8 +8,8 @@ export const StyledBox = styled(Box)`
     .Footer-constrainedContent {
       align-items: center;
       display: flex;
-      padding-bottom: 4rem;
-      padding-top: 4rem;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
 
       .Footer-heading {
         color: #ffffff;
