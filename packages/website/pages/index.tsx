@@ -7,7 +7,7 @@ import {
   EducationAndCertifcationsCardList,
   SkillList,
   Space,
-  Skill,
+  Footer,
 } from "../components";
 
 const IndexPage: NextPage = () => {
@@ -22,6 +22,7 @@ const IndexPage: NextPage = () => {
       <Space />
       <SkillList />
       <Space />
+      <Footer />
     </Fragment>
   );
 };
