@@ -13,22 +13,22 @@ export const StyledBox = styled(Box)`
       .HeroHeader-image {
         background-color: #cccccc;
         border-radius: 0.5rem;
-        height: 16rem;
+        height: 12rem;
         overflow: hidden;
         position: relative;
-        width: 16rem;
+        width: 12rem;
       }
 
       .HeroHeader-heading {
         color: #ffffff;
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: 700;max
         line-height: 1.5rem;
       }
 
       .HeroHeader-description {
         color: #ffffff;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         line-height: 1.5em;
         margin-top: 0.5rem;
         max-width: 32rem;
