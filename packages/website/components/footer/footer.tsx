@@ -17,7 +17,7 @@ export const Footer = ({
   return (
     <StyledBox className={classNameMemo} {...restProps}>
       <ConstrainedContent className="Footer-constrainedContent">
-        <Box className="Footer-heading">Lets connect!</Box>
+        <Box className="Footer-heading">{"Let's Connect"}</Box>
         <Box className="Footer-actions">
           <SocialMediaButtons />
         </Box>
