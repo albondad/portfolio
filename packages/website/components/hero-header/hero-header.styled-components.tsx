@@ -9,6 +9,13 @@ export const StyledBox = styled(Box)`
     .HeroHeader-constrainedContent {
       display: flex;
       gap: 1.25rem;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: ${(props) => props.theme.largeBreakpoint}) {
+        align-items: flex-start;
+        flex-direction: row;
+      }
 
       .HeroHeader-image {
         background-color: #cccccc;
@@ -24,6 +31,12 @@ export const StyledBox = styled(Box)`
         font-size: 1.5rem;
         font-weight: 700;max
         line-height: 1.5rem;
+        text-align: center;
+
+        @media screen and (min-width: ${(props) =>
+          props.theme.largeBreakpoint}) {
+            text-align: left;
+        }
       }
 
       .HeroHeader-description {
@@ -32,13 +45,25 @@ export const StyledBox = styled(Box)`
         line-height: 1.5em;
         margin-top: 0.5rem;
         max-width: 32rem;
+        text-align: center;
+
+        @media screen and (min-width: ${(props) =>
+          props.theme.largeBreakpoint}) {
+            text-align: left;
+        }
       }
 
       .HeroHeader-actions {
-        align-items: flex-end;
         color: #ffffff;
         display: flex;
-        margin-left: auto;
+        margin-left: unset;
+        margin-top: auto;
+        
+        @media screen and (min-width: ${(props) =>
+          props.theme.largeBreakpoint}) {
+            align-items: flex-end;
+            margin-left: auto;
+        }
       }
     }
   }
