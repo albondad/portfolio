@@ -16,7 +16,17 @@ export const StyledBox = styled(Box)`
       margin-top: 1.25rem;
 
       .CardList-item {
-        width: calc((100% - 1.25rem * 3) / 4);
+        width: 100%;
+
+        @media screen and (min-width: ${(props) =>
+            props.theme.smallBreakpoint}) {
+          width: calc((100% - 1.25rem * 1) / 2);
+        }
+
+        @media screen and (min-width: ${(props) =>
+            props.theme.largeBreakpoint}) {
+          width: calc((100% - 1.25rem * 3) / 4);
+        }
       }
     }
   }
