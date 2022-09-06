@@ -25,6 +25,11 @@ export const StyledBox = styled(Box)`
 
         @media screen and (min-width: ${(props) =>
             props.theme.largeBreakpoint}) {
+          width: calc((100% - 1.25rem * 2) / 3);
+        }
+
+        @media screen and (min-width: ${(props) =>
+            props.theme.extraLargeBreakpoint}) {
           width: calc((100% - 1.25rem * 3) / 4);
         }
       }
