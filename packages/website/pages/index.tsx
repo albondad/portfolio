@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import {
   HeroHeader,
   NavigationBar,
-  ExperienceAndProjectsCardList,
+  WorkExperienceCardList,
   EducationAndCertifcationsCardList,
   SkillList,
   Space,
@@ -16,7 +16,7 @@ const IndexPage: NextPage = () => {
       <NavigationBar />
       <HeroHeader />
       <Space />
-      <ExperienceAndProjectsCardList />
+      <WorkExperienceCardList />
       <Space />
       <Space />
       <EducationAndCertifcationsCardList />

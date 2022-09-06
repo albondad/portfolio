@@ -1,18 +1,18 @@
-import { StyledCardList } from "./experience-and-projects-card-list.styled-components";
+import { StyledCardList } from "./work-experience-card-list.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 import { workExperiencesCollection as workExperienceCollection } from "../../collections";
 import { Card } from "..";
 const { DateTime } = require("luxon");
 
-export type ExperienceAndProjectsCardListPropsType = ComponentProps<
+export type WorkExperienceCardListPropsType = ComponentProps<
   typeof StyledCardList
 > & {};
 
-export const ExperienceAndProjectsCardList = ({
+export const WorkExperienceCardList = ({
   className: classNameProp,
   ...restProps
-}: ExperienceAndProjectsCardListPropsType) => {
+}: WorkExperienceCardListPropsType) => {
   const classNameMemo = useMemo(() => {
     const newClassNameMemo = classNames(
       "ExperienceAndProjectsCardList-root",
