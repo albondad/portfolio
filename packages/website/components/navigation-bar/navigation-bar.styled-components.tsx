@@ -12,8 +12,14 @@ export const StyledBox = styled(Box)`
 
     .NavigationBar-logo {
       font-size: 1.5rem;
-      line-height: 1.5em;
       font-weight: 700;
+      line-height: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: ${(props) => props.theme.smallBreakpoint}) {
+        margin-left: 0;
+      }
     }
 
     .NavigationBar-links {

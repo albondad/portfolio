@@ -18,10 +18,10 @@ export const NavigationBar = ({
     <StyledBox className={classNameMemo} {...restProps}>
       <ConstrainedContent className="NavigationBar-constrainedContent">
         <Box className="NavigationBar-logo">AL BONDAD</Box>
-        <Box className="NavigationBar-links">
+        {/* <Box className="NavigationBar-links">
           <Box className="NavigationBar-item">Home</Box>
           <Box className="NavigationBar-item">Contact Us</Box>
-        </Box>
+        </Box> */}
       </ConstrainedContent>
     </StyledBox>
   );
