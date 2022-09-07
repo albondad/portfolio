@@ -39,6 +39,7 @@ export const WorkExperienceCardList = ({
           key: element.id,
           heading: element.organization,
           details: details,
+          imageSource: element.imageSources[0],
         };
       }
     );

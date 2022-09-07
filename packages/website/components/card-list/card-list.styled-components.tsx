@@ -7,6 +7,7 @@ export const StyledBox = styled(Box)`
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 1.5em;
+      overflow: hidden;
     }
 
     .CardList-list {

@@ -27,12 +27,13 @@ export const EducationAndCertifcationsCardList = ({
           "LLLL yyyy"
         )}`;
 
-        const details = [element.organization, formattedDate];
+        const details = [element.organizationName, formattedDate];
 
         return {
           key: element.id,
           heading: element.name,
           details: details,
+          imageSource: element.organizationImageSource,
         };
       }
     );

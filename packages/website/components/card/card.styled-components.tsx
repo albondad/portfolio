@@ -2,10 +2,23 @@ import styled from "styled-components";
 import { Box } from "..";
 
 export const StyledBox = styled(Box)`
+  & {
+    filter: saturate(0.25);
+    transition: transform 0.125s, filter 0.125s;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: scale(1.025) translate(0, -0.25rem);
+    filter: saturate(1);
+  }
+
   & .Card-image {
     background-color: #eeeeee;
-    padding-top: 56.25%;
     border-radius: 0.5rem;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
   }
 
   & .Card-heading {
