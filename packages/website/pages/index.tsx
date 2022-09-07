@@ -8,6 +8,7 @@ import {
   SkillList,
   Space,
   Footer,
+  Drawer,
 } from "../components";
 
 const IndexPage: NextPage = () => {
@@ -26,6 +27,7 @@ const IndexPage: NextPage = () => {
       <Space />
       <Space />
       <Footer />
+      <Drawer />
     </Fragment>
   );
 };
