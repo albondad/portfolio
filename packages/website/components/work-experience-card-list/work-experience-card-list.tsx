@@ -1,9 +1,8 @@
+import { DateTime } from "luxon";
 import { StyledCardList } from "./work-experience-card-list.styled-components";
+import { workExperiencesCollection as workExperienceCollection } from "../../collections";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
-import { workExperiencesCollection as workExperienceCollection } from "../../collections";
-import { Card } from "..";
-const { DateTime } = require("luxon");
 
 export type WorkExperienceCardListPropsType = ComponentProps<
   typeof StyledCardList

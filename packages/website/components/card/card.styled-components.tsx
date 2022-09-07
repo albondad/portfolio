@@ -9,14 +9,18 @@ export const StyledBox = styled(Box)`
   }
 
   & .Card-heading {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 700;
     line-height: 1.5em;
-    margin-top: 0.5em;
+    margin-top: 0.75rem;
   }
 
   & .Card-details {
     font-size: 1rem;
     line-height: 1.5em;
     margin-top: 0.125em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
   }
 `;

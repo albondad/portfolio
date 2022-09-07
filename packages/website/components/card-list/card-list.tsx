@@ -1,7 +1,7 @@
 import { Box, Card, CardPropsType, ConstrainedContent } from "..";
 import { StyledBox } from "./card-list.styled-components";
 import classNames from "classnames";
-import React, { ComponentProps, useMemo, Children, ReactNode } from "react";
+import React, { ComponentProps, useMemo, ReactNode } from "react";
 
 export type CardListPropsType = ComponentProps<typeof StyledBox> & {
   childrenProp?: ReactNode;
