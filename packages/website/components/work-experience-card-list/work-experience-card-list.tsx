@@ -3,6 +3,7 @@ import { StyledCardList } from "./work-experience-card-list.styled-components";
 import { workExperiencesCollection as workExperienceCollection } from "../../collections";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
+import { useRouter } from "next/router";
 
 export type WorkExperienceCardListPropsType = ComponentProps<
   typeof StyledCardList
@@ -19,6 +20,8 @@ export const WorkExperienceCardList = ({
     );
     return newClassNameMemo;
   }, [classNameProp]);
+
+  const routerHook = useRouter();
 
   const itemsMemo = useMemo(() => {
     const newItemsMemo = workExperienceCollection.workExperience.map(
@@ -40,6 +43,9 @@ export const WorkExperienceCardList = ({
           heading: element.organization,
           details: details,
           imageSource: element.imageSources[0],
+          onClick: () => {
+            routerHook.push("/work-experience/test");
+          },
         };
       }
     );

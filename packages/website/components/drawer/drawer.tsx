@@ -13,6 +13,7 @@ export type DrawerPropsType = ComponentProps<typeof StyledBox> & {
 export const Drawer = ({
   className: classNameProp,
   isOpen: isOpenProp = false,
+  onClose: onCloseProp,
   ...restProps
 }: DrawerPropsType) => {
   const classNameMemo = useMemo(() => {
@@ -37,12 +38,14 @@ export const Drawer = ({
       }}
     >
       <StyledBox className={classNameMemo} {...restProps}>
-        <Box className="Drawer-overlay"></Box>
+        <Box className="Drawer-overlay" onClick={onCloseProp}></Box>
         <Box className="Drawer-mainContent">
           <Box className="Drawer-constrainedContent">
             <Box className="Drawer-header">
               <Box className="Drawer-heading">Heading</Box>
-              <Box className="Drawer-goBack">{"<-"} Go Back</Box>
+              <Box className="Drawer-goBack" onClick={onCloseProp}>
+                {"<-"} Go Back
+              </Box>
             </Box>
             <Box className="Drawer-images">
               <Box className="Drawer-mainImage">
