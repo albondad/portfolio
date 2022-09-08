@@ -1,4 +1,4 @@
-import { Box } from "..";
+import { Box, TeenyiconsArrowLeftSmallIcon } from "..";
 import { StyledBox } from "./drawer.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
@@ -44,7 +44,8 @@ export const Drawer = ({
             <Box className="Drawer-header">
               <Box className="Drawer-heading">Heading</Box>
               <Box className="Drawer-goBack" onClick={onCloseProp}>
-                {"<-"} Go Back
+                <TeenyiconsArrowLeftSmallIcon className="Drawer-icon" />
+                Go Back
               </Box>
             </Box>
             <Box className="Drawer-images">

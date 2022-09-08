@@ -25,11 +25,11 @@ export const StyledBox = styled(Box)`
       width: 100vw;
 
       .Drawer-constrainedContent {
-        width: 100%;
-        max-width: calc(50% - 4rem);
         margin-left: auto;
         margin-right: auto;
+        max-width: calc(50rem - 4rem);
         padding: 4rem;
+        width: 100%;
       }
 
       .Drawer-header {
@@ -43,9 +43,22 @@ export const StyledBox = styled(Box)`
         }
 
         .Drawer-goBack {
+          align-items: center;
+          cursor: pointer;
+          display: flex;
           font-size: 1.25rem;
+          font-weight: 700;
           line-height: 1.5em;
           margin-left: auto;
+          transition: transform 0.125s, filter 0.125s;
+
+          :hover {
+            transform: scale(1.025);
+          }
+
+          .Drawer-icon {
+            margin-right: 0.125rem;
+          }
         }
       }
 

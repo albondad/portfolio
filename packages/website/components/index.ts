@@ -14,6 +14,7 @@ export * from "./social-media-buttons";
 export * from "./space";
 export * from "./styled-compoenents-theme-provider";
 export * from "./svg-icon";
+export * from "./teenyicons-arrow-left-small-icon";
 export * from "./teenyicons-github-icon";
 export * from "./teenyicons-linked-in-icon";
 export * from "./teenyicons-text-document-icon";

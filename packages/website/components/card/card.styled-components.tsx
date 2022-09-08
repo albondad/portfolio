@@ -9,7 +9,7 @@ export const StyledBox = styled(Box)`
   }
 
   &:hover {
-    transform: scale(1.025) translate(0, -0.25rem);
+    transform: scale(1.025);
     filter: saturate(1);
   }
 
