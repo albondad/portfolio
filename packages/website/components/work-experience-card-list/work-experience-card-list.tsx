@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
 import { StyledCardList } from "./work-experience-card-list.styled-components";
+import { useRouter } from "next/router";
 import { workExperiencesCollection as workExperienceCollection } from "../../collections";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
-import { useRouter } from "next/router";
 
 export type WorkExperienceCardListPropsType = ComponentProps<
   typeof StyledCardList

@@ -11,6 +11,7 @@ export type DrawerPropsType = ComponentProps<typeof StyledBox> & {
 };
 
 export const Drawer = ({
+  children: childrenProp,
   className: classNameProp,
   isOpen: isOpenProp = false,
   onClose: onCloseProp,
@@ -48,31 +49,7 @@ export const Drawer = ({
                 Go Back
               </Box>
             </Box>
-            <Box className="Drawer-images">
-              <Box className="Drawer-mainImage">
-                <Box className="Drawer-image"></Box>
-              </Box>
-              <Box className="Drawer-otherImages">
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-                <Box className="Drawer-item">
-                  <Box className="Drawer-image"></Box>
-                </Box>
-              </Box>
-            </Box>
+            <Box className="Drawer-body">{childrenProp}</Box>
           </Box>
         </Box>
       </StyledBox>

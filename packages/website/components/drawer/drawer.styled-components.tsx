@@ -60,41 +60,6 @@ export const StyledBox = styled(Box)`
           }
         }
       }
-
-      .Drawer-images {
-        height: 10rem;
-        width: 100%;
-
-        .Drawer-mainImage {
-          width: 100%;
-          margin-top: 1.25rem;
-
-          .Drawer-image {
-            background-color: #cccccc;
-            border-radius: 0.5rem;
-            padding-top: 56.25%;
-            width: 100%;
-          }
-        }
-
-        .Drawer-otherImages {
-          margin-top: 1.25rem;
-          display: flex;
-          gap: 1.25rem;
-          flex-wrap: wrap;
-          .Drawer-item {
-            max-width: calc((100% - 1.25rem * 3) / 4);
-            width: 100%;
-
-            .Drawer-image {
-              background-color: #cccccc;
-              border-radius: 0.5rem;
-              padding-top: 56.25%;
-              width: 100%;
-            }
-          }
-        }
-      }
     }
   }
 

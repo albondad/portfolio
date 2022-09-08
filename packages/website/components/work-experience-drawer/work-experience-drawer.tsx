@@ -1,9 +1,8 @@
 import { StyledDrawer } from "./work-experience-drawer.styled-components";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
-import Image from "next/image";
-import { CSSTransition } from "react-transition-group";
 import { useRouter } from "next/router";
+import { Box, ImageGallery } from "..";
 
 export type WorkExperienceDrawerPropsType = ComponentProps<
   typeof StyledDrawer
@@ -39,6 +38,16 @@ export const WorkExperienceDrawer = ({
       className={classNameMemo}
       isOpen={isDrawerOpenMemo}
       onClose={handleDrawerClose}
-    ></StyledDrawer>
+    >
+      <Box className="WorkExperienceDrawer-imageGallery">
+        <ImageGallery
+          imageSources={[
+            "/images/bodhi-01.png",
+            "/images/amazon-web-services-01.png",
+            "/images/bodhi-01.png",
+          ]}
+        />
+      </Box>
+    </StyledDrawer>
   );
 };

@@ -7,6 +7,7 @@ export * from "./drawer";
 export * from "./education-and-certifications-card-list";
 export * from "./footer";
 export * from "./hero-header";
+export * from "./image-gallery";
 export * from "./navigation-bar";
 export * from "./skill-list";
 export * from "./skill";
