@@ -11,9 +11,10 @@ export const StyledBox = styled(Box)`
     height: 3rem;
     justify-content: center;
     min-width: 3rem;
-  }
+    transition: transform 0.125s;
 
-  &:hover {
-    opacity: 0.5;
+    :hover {
+      transform: scale(1.1);
+    }
   }
 `;

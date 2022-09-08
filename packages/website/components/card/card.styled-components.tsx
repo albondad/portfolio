@@ -31,7 +31,6 @@ export const StyledBox = styled(Box)`
   & .Card-details {
     font-size: 1rem;
     line-height: 1.5em;
-    margin-top: 0.125em;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;

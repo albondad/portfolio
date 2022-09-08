@@ -12,7 +12,6 @@ export const StyledBox = styled(Box)`
       top: 0;
       left: 0;
       opacity: 0.5;
-      transition: transform 200ms;
     }
 
     .Drawer-mainContent {
@@ -27,7 +26,7 @@ export const StyledBox = styled(Box)`
       .Drawer-constrainedContent {
         margin-left: auto;
         margin-right: auto;
-        max-width: calc(50rem - 4rem);
+        max-width: calc(62.5rem - 4rem);
         padding: 4rem;
         width: 100%;
       }
@@ -50,7 +49,7 @@ export const StyledBox = styled(Box)`
           font-weight: 700;
           line-height: 1.5em;
           margin-left: auto;
-          transition: transform 0.125s, filter 0.125s;
+          transition: transform 0.125s;
 
           :hover {
             transform: scale(1.025);
