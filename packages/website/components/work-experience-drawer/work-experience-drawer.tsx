@@ -3,6 +3,8 @@ import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 import { useRouter } from "next/router";
 import { Box, ImageGallery } from "..";
+import { workExperienceCollection } from "../../collections";
+import { workExperience } from "../../collections/work-experiences-collection";
 
 export type WorkExperienceDrawerPropsType = ComponentProps<
   typeof StyledDrawer
@@ -29,6 +31,19 @@ export const WorkExperienceDrawer = ({
     return isDrawerOpenMemo;
   }, [routerHook]);
 
+  const workExperienceMemo = useMemo(() => {
+    const workExperienceCollectionId = routerHook.query.slug?.[1];
+    console.log(
+      "[remove me] workExperienceCollectionId",
+      workExperienceCollectionId
+    );
+    const newWorkExperienceMemo = workExperienceCollection.workExperience.find(
+      (element) => element.id === workExperienceCollectionId
+    );
+
+    return newWorkExperienceMemo;
+  }, [routerHook]);
+
   const handleDrawerClose = () => {
     routerHook.push("/");
   };
@@ -40,13 +55,7 @@ export const WorkExperienceDrawer = ({
       onClose={handleDrawerClose}
     >
       <Box className="WorkExperienceDrawer-imageGallery">
-        <ImageGallery
-          imageSources={[
-            "/images/bodhi-01.png",
-            "/images/amazon-web-services-01.png",
-            "/images/bodhi-01.png",
-          ]}
-        />
+        <ImageGallery imageSources={workExperienceMemo?.imageSources} />
       </Box>
     </StyledDrawer>
   );

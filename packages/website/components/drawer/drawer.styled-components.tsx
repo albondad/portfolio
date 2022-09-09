@@ -5,23 +5,30 @@ export const StyledBox = styled(Box)`
   & {
     .Drawer-overlay {
       background-color: #000000;
+      cursor: pointer;
       height: 100vh;
-      position: fixed;
-      width: 100vw;
-      z-index: 10;
-      top: 0;
       left: 0;
       opacity: 0.5;
+      position: fixed;
+      top: 0;
+      transition: opacity 250ms;
+      width: 100vw;
+      z-index: 10;
+
+      :hover {
+        opacity: 0.25;
+      }
     }
 
     .Drawer-mainContent {
       background-color: #ffffff;
-      height: 100vh;
+      height: calc(100vh - 8rem);
       left: 0;
+      overflow: auto;
       position: fixed;
       top: 8rem;
-      z-index: 10;
       width: 100vw;
+      z-index: 10;
 
       .Drawer-constrainedContent {
         margin-left: auto;
@@ -32,8 +39,8 @@ export const StyledBox = styled(Box)`
       }
 
       .Drawer-header {
-        display: flex;
         align-items: center;
+        display: flex;
 
         .Drawer-heading {
           font-size: 1.5rem;

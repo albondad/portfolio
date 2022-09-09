@@ -11,7 +11,15 @@ export const workExperience: WorkExperienceType[] = [
   {
     endDate: "2022-08-01T07:00:00-05:00",
     id: "5",
-    imageSources: ["/images/bodhi-01.png"],
+    imageSources: [
+      "/images/bodhi-01.png",
+      "/images/bodhi-02.png",
+      "/images/bodhi-03.png",
+      "/images/bodhi-04.png",
+      "/images/bodhi-05.png",
+      "/images/bodhi-06.png",
+      "/images/bodhi-07.png",
+    ],
     organization: "Bodhi",
     startDate: "2021-02-01T06:00:00-06:00",
     title: "Software Developer",
@@ -19,7 +27,13 @@ export const workExperience: WorkExperienceType[] = [
   {
     endDate: "2020-11-01T06:00:00-06:00",
     id: "4",
-    imageSources: ["/images/gyst-audio-01.png"],
+    imageSources: [
+      "/images/gyst-audio-01.png",
+      "/images/gyst-audio-02.png",
+      "/images/gyst-audio-03.png",
+      "/images/gyst-audio-04.png",
+      "/images/gyst-audio-05.png",
+    ],
     organization: "Gyst Audio",
     startDate: "2020-02-01T06:00:00-06:00",
     title: "Frontend Developer",
@@ -27,7 +41,12 @@ export const workExperience: WorkExperienceType[] = [
   {
     endDate: "2020-10-01T07:00:00-05:00",
     id: "3",
-    imageSources: ["/images/halo-science-01.png"],
+    imageSources: [
+      "/images/halo-science-01.png",
+      "/images/halo-science-02.png",
+      "/images/halo-science-03.png",
+      "/images/halo-science-04.png",
+    ],
     organization: "Halo Science",
     startDate: "2020-09-01T07:00:00-05:00",
     title: "Full Stack Developer Intern",
@@ -35,7 +54,7 @@ export const workExperience: WorkExperienceType[] = [
   {
     endDate: "2020-05-01T07:00:00-05:00",
     id: "1",
-    imageSources: ["/images/lifetime-ui-01.png"],
+    imageSources: ["/images/lifetime-ui-01.png", "/images/lifetime-ui-02.png"],
     organization: "Lifetime UI",
     startDate: "2020-04-01T07:00:00-05:00",
     title: "Web Developer",
@@ -43,7 +62,12 @@ export const workExperience: WorkExperienceType[] = [
   {
     endDate: "2020-03-01T06:00:00-06:00",
     id: "0",
-    imageSources: ["/images/zaner-01.png"],
+    imageSources: [
+      "/images/zaner-01.png",
+      "/images/zaner-02.png",
+      "/images/zaner-03.png",
+      "/images/zaner-04.png",
+    ],
     organization: "Zaner",
     startDate: "2020-01-01T06:00:00-06:00",
     title: "UI and UX Developer",

@@ -1,7 +1,7 @@
 import { Box, TeenyiconsArrowLeftSmallIcon } from "..";
 import { StyledBox } from "./drawer.styled-components";
 import classNames from "classnames";
-import React, { ComponentProps, useMemo } from "react";
+import React, { ComponentProps, useEffect, useMemo } from "react";
 import Image from "next/image";
 import { CSSTransition } from "react-transition-group";
 
@@ -24,6 +24,17 @@ export const Drawer = ({
     });
     return newClassNameMemo;
   }, [classNameProp, isOpenProp]);
+
+  useEffect(() => {
+    const hasDrawerOpen =
+      !!document.getElementsByClassName("Drawer-isOpenTrue")[0];
+
+    if (hasDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpenProp]);
 
   return (
     <CSSTransition

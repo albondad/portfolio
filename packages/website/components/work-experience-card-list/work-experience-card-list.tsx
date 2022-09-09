@@ -1,7 +1,7 @@
 import { DateTime } from "luxon";
 import { StyledCardList } from "./work-experience-card-list.styled-components";
 import { useRouter } from "next/router";
-import { workExperiencesCollection as workExperienceCollection } from "../../collections";
+import { workExperienceCollection } from "../../collections";
 import classNames from "classnames";
 import React, { ComponentProps, useMemo } from "react";
 
@@ -44,7 +44,7 @@ export const WorkExperienceCardList = ({
           details: details,
           imageSource: element.imageSources[0],
           onClick: () => {
-            routerHook.push("/work-experience/test");
+            routerHook.push(`/work-experience/${element.id}`);
           },
         };
       }
