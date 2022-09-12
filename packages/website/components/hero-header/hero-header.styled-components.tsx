@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box } from "..";
+import styled from 'styled-components'
+import { Box } from '..'
 
 export const StyledBox = styled(Box)`
   & {
@@ -34,7 +34,7 @@ export const StyledBox = styled(Box)`
         text-align: center;
 
         @media screen and (min-width: ${(props) =>
-          props.theme.largeBreakpoint}) {
+            props.theme.largeBreakpoint}) {
             text-align: left;
         }
       }
@@ -48,7 +48,7 @@ export const StyledBox = styled(Box)`
         text-align: center;
 
         @media screen and (min-width: ${(props) =>
-          props.theme.largeBreakpoint}) {
+            props.theme.largeBreakpoint}) {
             text-align: left;
         }
       }
@@ -60,11 +60,11 @@ export const StyledBox = styled(Box)`
         margin-top: auto;
         
         @media screen and (min-width: ${(props) =>
-          props.theme.largeBreakpoint}) {
+            props.theme.largeBreakpoint}) {
             align-items: flex-end;
             margin-left: auto;
         }
       }
     }
   }
-`;
+`

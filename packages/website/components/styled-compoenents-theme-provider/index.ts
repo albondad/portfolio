@@ -1,1 +1,1 @@
-export * from "./styled-compoenents-theme-provider";
+export * from './styled-compoenents-theme-provider'

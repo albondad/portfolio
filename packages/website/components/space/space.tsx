@@ -1,18 +1,18 @@
-import { StyledBox } from "./space.styled-components";
-import classNames from "classnames";
-import React, { ComponentProps, useMemo } from "react";
+import { StyledBox } from './space.styled-components'
+import classNames from 'classnames'
+import React, { ComponentProps, useMemo } from 'react'
 
-export type SpacePropsType = ComponentProps<typeof StyledBox> & {};
+export type SpacePropsType = ComponentProps<typeof StyledBox> & {}
 
 export const Space = ({
-  className: classNameProp,
-  size: sizeProp,
-  ...restProps
+    className: classNameProp,
+    size: sizeProp,
+    ...restProps
 }: SpacePropsType) => {
-  const classNameMemo = useMemo(() => {
-    const newClassNameMemo = classNames("Space-root", classNameProp);
-    return newClassNameMemo;
-  }, [classNameProp]);
+    const classNameMemo = useMemo(() => {
+        const newClassNameMemo = classNames('Space-root', classNameProp)
+        return newClassNameMemo
+    }, [classNameProp])
 
-  return <StyledBox className={classNameMemo} {...restProps}></StyledBox>;
-};
+    return <StyledBox className={classNameMemo} {...restProps}></StyledBox>
+}

@@ -1,1 +1,1 @@
-export * from "./work-experience-card-list";
+export * from './work-experience-card-list'

@@ -1,1 +1,1 @@
-export * from "./constrained-content";
+export * from './constrained-content'

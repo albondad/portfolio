@@ -1,1 +1,1 @@
-export * from "./teenyicons-text-document-icon";
+export * from './teenyicons-text-document-icon'

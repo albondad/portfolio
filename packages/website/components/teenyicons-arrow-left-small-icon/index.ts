@@ -1,1 +1,1 @@
-export * from "./teenyicons-arrow-left-small-icon";
+export * from './teenyicons-arrow-left-small-icon'
