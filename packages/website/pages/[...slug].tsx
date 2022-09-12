@@ -1,37 +1,12 @@
-import type { NextPage } from 'next'
-import { Fragment } from 'react'
-import {
-    HeroHeader,
-    NavigationBar,
-    WorkExperienceCardList,
-    EducationAndCertifcationsCardList,
-    SkillList,
-    Space,
-    Footer,
-    Drawer,
-    WorkExperienceDrawer,
-} from '../components'
+import { IndexLayout } from '../components'
+import { NextPageWithLayoutType } from '../types'
 
-const IndexPage: NextPage = () => {
-    return (
-        <Fragment>
-            <NavigationBar />
-            <HeroHeader />
-            <Space />
-            <WorkExperienceCardList />
-            <Space />
-            <Space />
-            <EducationAndCertifcationsCardList />
-            <Space />
-            <Space />
-            <SkillList />
-            <Space />
-            <Space />
-            <Footer />
-            <WorkExperienceDrawer />
-            <Drawer />
-        </Fragment>
-    )
+const Page: NextPageWithLayoutType = () => {
+    return null
 }
 
-export default IndexPage
+Page.getLayout = (page) => {
+    return <IndexLayout>{page}</IndexLayout>
+}
+
+export default Page

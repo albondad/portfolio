@@ -10,7 +10,7 @@ export type CertificationType = {
 export const certifications: CertificationType[] = [
     {
         date: '2021-02-01T18:23:00.000Z',
-        id: '8a718f57-f85c-43d2-9ebd-2e8c85c9e855',
+        id: '36030436-1308-433b-80f8-1ab7d9d1bfe2',
         links: [
             'https://www.linkedin.com/in/albondad/details/certifications/edit/forms/1754808893/?profileFormEntryPoint=PROFILE_SECTION',
         ],

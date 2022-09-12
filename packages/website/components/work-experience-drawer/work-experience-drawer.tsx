@@ -60,7 +60,7 @@ export const WorkExperienceDrawer = ({
     }, [workExperienceMemo?.endDate, workExperienceMemo?.startDate])
 
     const handleDrawerClose = () => {
-        routerHook.push('/')
+        routerHook.push('/', undefined, { scroll: false })
     }
 
     return (

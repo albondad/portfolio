@@ -1,11 +1,14 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppPropsWithLayoutType } from '../types'
+import { ReactNode } from 'react'
 import { StyledComponentsThemeProvider } from '../components'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppPropsWithLayoutType) {
+    const getLayout = Component.getLayout || ((page: ReactNode) => page)
+
     return (
         <StyledComponentsThemeProvider>
-            <Component {...pageProps} />
+            {getLayout(<Component {...pageProps} />)}
         </StyledComponentsThemeProvider>
     )
 }

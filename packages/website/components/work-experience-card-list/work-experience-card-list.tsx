@@ -44,7 +44,11 @@ export const WorkExperienceCardList = ({
                     details: details,
                     imageSource: element.imageSources[0],
                     onClick: () => {
-                        routerHook.push(`/work-experience/${element.id}`)
+                        routerHook.push(
+                            `/work-experience/${element.id}`,
+                            undefined,
+                            { scroll: false }
+                        )
                     },
                 }
             }
