@@ -21,8 +21,13 @@ export const StyledBox = styled(Box)`
             .ImageGallery-item {
                 cursor: pointer;
                 filter: saturate(0.5);
-                width: calc((100% - 1.25rem * 3) / 4);
                 transition: opacity 250ms, transform 250ms, filter 250ms;
+                width: calc((100% - 1.25rem * 1) / 2);
+
+                @media screen and (min-width: ${(props) =>
+                        props.theme.smallBreakpoint}) {
+                    width: calc((100% - 1.25rem * 3) / 4);
+                }
             }
 
             .ImageGallery-item.ImageGallery-isDisabledFalse {

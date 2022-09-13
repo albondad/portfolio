@@ -34,13 +34,30 @@ export const StyledBox = styled(Box)`
                 margin-left: auto;
                 margin-right: auto;
                 max-width: calc(62.5rem - 4rem);
-                padding: 4rem;
+                padding: 2rem;
                 width: 100%;
+
+                @media screen and (min-width: ${(props) =>
+                        props.theme.smallBreakpoint}) {
+                    padding: 4rem;
+                }
             }
 
             .Drawer-header {
-                align-items: center;
+                align-items: flex-start;
                 display: flex;
+                flex-direction: column-reverse;
+
+                @media screen and (min-width: ${(props) =>
+                        props.theme.smallBreakpoint}) {
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                @media screen and (min-width: ${(props) =>
+                        props.theme.smallBreakpoint}) {
+                    flex-direction: row;
+                }
 
                 .Drawer-heading {
                     font-size: 1.5rem;
@@ -55,11 +72,15 @@ export const StyledBox = styled(Box)`
                     font-size: 1.25rem;
                     font-weight: 700;
                     line-height: 1.5em;
-                    margin-left: auto;
                     transition: transform 0.125s;
 
                     :hover {
                         transform: scale(1.025);
+                    }
+
+                    @media screen and (min-width: ${(props) =>
+                            props.theme.smallBreakpoint}) {
+                        margin-left: auto;
                     }
 
                     .Drawer-icon {
