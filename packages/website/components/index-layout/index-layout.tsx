@@ -1,12 +1,13 @@
 import {
+    EducationAndCertifcationsCardList,
+    EducationAndExperienceCertifications,
+    Footer,
     HeroHeader,
     NavigationBar,
-    WorkExperienceCardList,
-    EducationAndCertifcationsCardList,
     SkillList,
     Space,
+    WorkExperienceCardList,
     WorkExperienceDrawer,
-    Footer,
 } from '..'
 import React, { ReactNode, Fragment } from 'react'
 
@@ -33,6 +34,7 @@ export const IndexLayout = ({
             <Space />
             <Footer />
             <WorkExperienceDrawer />
+            <EducationAndExperienceCertifications />
             {childrenProp}
         </Fragment>
     )
