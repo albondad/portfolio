@@ -29,6 +29,7 @@ export const StyledBox = styled(Box)`
             top: 8rem;
             width: 100vw;
             z-index: 10;
+            border-radius: 0.5rem 0.5rem 0 0;
 
             .Drawer-constrainedContent {
                 margin-left: auto;
