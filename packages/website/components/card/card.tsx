@@ -8,6 +8,7 @@ export type CardPropsType = ComponentProps<typeof StyledBox> & {
     details?: string[]
     heading?: string
     imageSource?: string
+    onImageClick?: () => {}
 }
 
 export const Card = ({
@@ -15,6 +16,7 @@ export const Card = ({
     details: detailsProp = [],
     heading: headingProp,
     imageSource: imageSourceProp = '',
+    onImageClick: onImageClickProp,
     ...restProps
 }: CardPropsType) => {
     const classNameMemo = useMemo(() => {
@@ -26,7 +28,12 @@ export const Card = ({
         <StyledBox className={classNameMemo} {...restProps}>
             <Box className="Card-image" src={imageSourceProp}>
                 {imageSourceProp && (
-                    <Image src={imageSourceProp} alt="image" layout="fill" />
+                    <Image
+                        alt="image"
+                        layout="fill"
+                        onClick={onImageClickProp}
+                        src={imageSourceProp}
+                    />
                 )}
             </Box>
             <Box className="Card-heading">{headingProp}</Box>
