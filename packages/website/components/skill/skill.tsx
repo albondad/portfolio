@@ -3,10 +3,13 @@ import { StyledBox } from './skill.styled-components'
 import classNames from 'classnames'
 import React, { ComponentProps, useMemo } from 'react'
 
-export type SkillPropsType = ComponentProps<typeof StyledBox> & {}
+export type SkillPropsType = ComponentProps<typeof StyledBox> & {
+    label: string
+}
 
 export const Skill = ({
     className: classNameProp,
+    label: labelProp,
     ...restProps
 }: SkillPropsType) => {
     const classNameMemo = useMemo(() => {
@@ -19,7 +22,7 @@ export const Skill = ({
             <Box className="Skill-icon">
                 <TeenyiconsTextDocumentIcon />
             </Box>
-            <Box className="Skill-label">label</Box>
+            <Box className="Skill-label">{labelProp}</Box>
         </StyledBox>
     )
 }

@@ -23,28 +23,40 @@ export const SkillList = ({
                 <Box className="SkillList-heading">{headingProp}</Box>
                 <Box className="SkillList-list">
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="React" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="Material UI" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="Semantic UI" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="Node.js" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="Express" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="MongoDB" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="Javascript" />
                     </Box>
                     <Box className="SkillList-item">
-                        <Skill />
+                        <Skill label="HTML" />
+                    </Box>
+                    <Box className="SkillList-item">
+                        <Skill label="CSS" />
+                    </Box>
+                    <Box className="SkillList-item">
+                        <Skill label="Git" />
+                    </Box>
+                    <Box className="SkillList-item">
+                        <Skill label="Figma" />
+                    </Box>
+                    <Box className="SkillList-item">
+                        <Skill label="Adobe XD" />
                     </Box>
                 </Box>
             </ConstrainedContent>

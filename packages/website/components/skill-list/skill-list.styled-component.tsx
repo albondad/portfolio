@@ -11,7 +11,7 @@ export const StyledBox = styled(Box)`
 
         .SkillList-list {
             display: flex;
-            gap: 1.25rem;
+            gap: 2rem;
             flex-wrap: wrap;
             margin-top: 1.25rem;
         }

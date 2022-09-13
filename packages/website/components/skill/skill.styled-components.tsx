@@ -3,12 +3,13 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 4rem;
         .Skill-icon {
-            align-items: center;
-            display: flex;
             height: 4rem;
-            justify-content: center;
-            width: 4rem;
 
             svg {
                 width: 100%;
