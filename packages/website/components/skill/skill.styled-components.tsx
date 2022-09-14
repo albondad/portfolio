@@ -9,11 +9,18 @@ export const StyledBox = styled(Box)`
         flex-direction: column;
         width: 4rem;
         .Skill-icon {
-            height: 4rem;
+            background-color: #000000;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
 
             svg {
                 width: 100%;
                 height: 100%;
+                height: 3rem;
+                width: 3rem;
+                fill: #ffffff;
             }
         }
 
