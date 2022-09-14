@@ -16,12 +16,15 @@ export const NavigationBar = ({
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
+            <Box className="NavigationBar-errorMessage">
+                <ConstrainedContent>
+                    Thanks for dropping by! I{"'"}m still in the middle of
+                    developing albondad.com so there might be a couple bugs
+                    lying around.
+                </ConstrainedContent>
+            </Box>
             <ConstrainedContent className="NavigationBar-constrainedContent">
                 <Box className="NavigationBar-logo">AL BONDAD</Box>
-                {/* <Box className="NavigationBar-links">
-          <Box className="NavigationBar-item">Home</Box>
-          <Box className="NavigationBar-item">Contact Us</Box>
-        </Box> */}
             </ConstrainedContent>
         </StyledBox>
     )

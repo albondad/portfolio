@@ -3,6 +3,12 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
+        .NavigationBar-errorMessage {
+            background-color: #ff312e;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
         .NavigationBar-constrainedContent {
             align-items: center;
             border-radius: 0 0 0.5rem 0.5rem;
