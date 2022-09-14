@@ -29,14 +29,15 @@ export const NavigationBar = ({
     const handleNavigationDrawerClose = () => {
         setIsNavigationDrawerOpenState(false)
     }
+
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <Box className="NavigationBar-errorMessage">
+            {/* <Box className="NavigationBar-errorMessage">
                 <ConstrainedContent>
                     Thanks for dropping by! This site is still in development so
                     expect bug fixes and design changes in the future.
                 </ConstrainedContent>
-            </Box>
+            </Box> */}
             <ConstrainedContent className="NavigationBar-constrainedContent">
                 <Box className="NavigationBar-logo">AL BONDAD</Box>
                 <Box className="NavigationBar-menu" onClick={handleMenuClick}>
