@@ -19,8 +19,8 @@ export const NavigationBar = ({
             <Box className="NavigationBar-errorMessage">
                 <ConstrainedContent>
                     Thanks for dropping by! I{"'"}m still in the middle of
-                    developing albondad.com so there might be a couple bugs
-                    lying around.
+                    developing albondad.com so you can expect some bug fixes and
+                    design changes. On the other hand, feel free to explore!
                 </ConstrainedContent>
             </Box>
             <ConstrainedContent className="NavigationBar-constrainedContent">
