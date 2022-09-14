@@ -32,7 +32,7 @@ export const SkillList = ({
     }, [classNameProp])
 
     return (
-        <StyledBox className={classNameMemo} {...restProps}>
+        <StyledBox className={classNameMemo} {...restProps} id="skills">
             <ConstrainedContent className="SkillList-constrainedContent">
                 <Box className="SkillList-heading">{headingProp}</Box>
                 <Box className="SkillList-list">

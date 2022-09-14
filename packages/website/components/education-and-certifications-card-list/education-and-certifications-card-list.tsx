@@ -57,6 +57,7 @@ export const EducationAndCertifcationsCardList = ({
         <StyledCardList
             className={classNameMemo}
             heading="Education and Certifications"
+            id="education-and-certifications"
             items={itemsMemo}
             {...restProps}
         />

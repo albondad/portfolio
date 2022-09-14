@@ -61,6 +61,7 @@ export const WorkExperienceCardList = ({
         <StyledCardList
             className={classNameMemo}
             heading="Work Experience"
+            id="work-experience"
             items={itemsMemo}
         />
     )
