@@ -30,7 +30,7 @@ export const SocialMediaButtons = ({
         <StyledBox className={classNameMemo} {...restProps}>
             <Box
                 as="a"
-                href="https://www.linkedin.com/in/albondad/"
+                href="/pdfs/al-bondad-resume.pdf"
                 rel="noreferrer"
                 target="_blank"
             >

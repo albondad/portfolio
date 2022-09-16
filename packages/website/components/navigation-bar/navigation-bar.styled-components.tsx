@@ -40,10 +40,11 @@ export const StyledBox = styled(Box)`
                 cursor: pointer;
                 font-size: 1rem;
                 line-height: 1.5em;
-            }
+                transition: transform 200ms;
 
-            .NavigationBar-item:hover {
-                opacity: 0.5;
+                :hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }

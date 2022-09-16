@@ -40,6 +40,16 @@ export const NavigationBar = ({
             </Box> */}
             <ConstrainedContent className="NavigationBar-constrainedContent">
                 <Box className="NavigationBar-logo">AL BONDAD</Box>
+                <Box className="NavigationBar-links">
+                    <Box
+                        as="a"
+                        className="NavigationBar-item"
+                        href="/pdfs/al-bondad-resume.pdf"
+                        target="_blank"
+                    >
+                        Resume
+                    </Box>
+                </Box>
                 <Box className="NavigationBar-menu" onClick={handleMenuClick}>
                     <TeenyiconsMenuIcon />
                 </Box>
