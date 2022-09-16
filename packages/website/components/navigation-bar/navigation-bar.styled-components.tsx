@@ -32,9 +32,14 @@ export const StyledBox = styled(Box)`
         }
 
         .NavigationBar-links {
-            display: flex;
+            display: none;
             gap: 3rem;
             margin-left: auto;
+
+            @media screen and (min-width: ${(props) =>
+                    props.theme.mediumBreakpoint}) {
+                display: flex;
+            }
 
             .NavigationBar-item {
                 cursor: pointer;
