@@ -52,6 +52,7 @@ export const StyledBox = styled(Box)`
 
                 .NavigationDrawer-body {
                     .NavigationDrawer-link {
+                        display: block;
                         font-size: 1.125rem;
                         line-height: 1.5em;
                         padding: 1rem 0;

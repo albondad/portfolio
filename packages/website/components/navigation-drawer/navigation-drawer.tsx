@@ -63,11 +63,9 @@ export const NavigationDrawer = ({
                     <Box className="NavigationDrawer-body">
                         <Box
                             className="NavigationDrawer-link"
-                            onClick={() => {
-                                handleLinkClick({
-                                    url: '/pdfs/al-bondad-resume',
-                                })
-                            }}
+                            as="a"
+                            href="/pdfs/al-bondad-resume.pdf"
+                            target="_blank"
                         >
                             Resume
                         </Box>
