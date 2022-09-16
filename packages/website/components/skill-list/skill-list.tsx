@@ -5,13 +5,13 @@ import {
     TeenyiconsCodeIcon,
     TeenyiconsCss3Icon,
     TeenyiconsFigmaIcon,
-    TeenyiconsGithubIcon,
     TeenyiconsGitIcon,
     TeenyiconsHtml5Icon,
     TeenyiconsJavascriptIcon,
     TeenyiconsMongodb,
     TeenyiconsNodejsIcon,
     TeenyiconsReactIcon,
+    TeenyiconsTypescriptIcon,
 } from '..'
 import { StyledBox } from './skill-list.styled-component'
 import classNames from 'classnames'
@@ -67,6 +67,12 @@ export const SkillList = ({
                         <Skill
                             label="Javascript"
                             icon={<TeenyiconsJavascriptIcon />}
+                        />
+                    </Box>
+                    <Box className="SkillList-item">
+                        <Skill
+                            label="Typescript"
+                            icon={<TeenyiconsTypescriptIcon />}
                         />
                     </Box>
                     <Box className="SkillList-item">
