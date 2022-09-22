@@ -34,10 +34,6 @@ export const WorkExperienceDrawer = ({
 
     const workExperienceMemo = useMemo(() => {
         const workExperienceCollectionId = routerHook.query.slug?.[1]
-        console.log(
-            '[remove me] workExperienceCollectionId',
-            workExperienceCollectionId
-        )
         const newWorkExperienceMemo =
             workExperienceCollection.workExperience.find(
                 (element) => element.id === workExperienceCollectionId
