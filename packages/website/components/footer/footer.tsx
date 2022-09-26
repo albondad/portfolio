@@ -10,7 +10,7 @@ export const Footer = ({
     ...restProps
 }: FooterPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Footer-root', classNameProp)
+        const newClassNameMemo = classNames('Footer', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

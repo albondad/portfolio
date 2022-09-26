@@ -15,7 +15,7 @@ export const WorkExperienceCardList = ({
 }: WorkExperienceCardListPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'ExperienceAndProjectsCardList-root',
+            'ExperienceAndProjectsCardList',
             classNameProp
         )
         return newClassNameMemo

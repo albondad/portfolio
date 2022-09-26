@@ -17,7 +17,7 @@ export const SvgIcon = ({
     ...restProps
 }: SvgIconPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('SvgIcon-root', classNameProp)
+        const newClassNameMemo = classNames('SvgIcon', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

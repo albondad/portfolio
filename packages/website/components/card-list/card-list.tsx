@@ -17,7 +17,7 @@ export const CardList = ({
     ...restProps
 }: CardListPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('CardList-root', classNameProp)
+        const newClassNameMemo = classNames('CardList', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

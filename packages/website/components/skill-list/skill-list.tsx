@@ -27,7 +27,7 @@ export const SkillList = ({
     ...restProps
 }: SkillListPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('SkillList-root', classNameProp)
+        const newClassNameMemo = classNames('SkillList', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

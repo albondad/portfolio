@@ -15,7 +15,7 @@ export const Skill = ({
     ...restProps
 }: SkillPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Skill-root', classNameProp)
+        const newClassNameMemo = classNames('Skill', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

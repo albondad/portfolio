@@ -10,7 +10,7 @@ export const Button = ({
     ...restProps
 }: ButtonPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Button-root', classNameProp)
+        const newClassNameMemo = classNames('Button', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

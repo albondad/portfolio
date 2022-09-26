@@ -12,7 +12,7 @@ export const HeroHeader = ({
     ...restProps
 }: HeroHeaderPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('HeroHeader-root', classNameProp)
+        const newClassNameMemo = classNames('HeroHeader', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

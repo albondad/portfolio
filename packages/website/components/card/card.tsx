@@ -20,7 +20,7 @@ export const Card = ({
     ...restProps
 }: CardPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Card-root', classNameProp)
+        const newClassNameMemo = classNames('Card', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

@@ -15,7 +15,7 @@ export const NavigationBar = ({
     ...restProps
 }: NavigationBarPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('NavigationBar-root', classNameProp)
+        const newClassNameMemo = classNames('NavigationBar', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
