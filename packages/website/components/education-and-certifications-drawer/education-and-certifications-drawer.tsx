@@ -18,7 +18,7 @@ export const EducationAndExperienceCertifications = ({
 
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'EducationAndExperienceCertifications',
+            'education-and-certifications-drawer',
             classNameProp,
             {}
         )
@@ -62,15 +62,15 @@ export const EducationAndExperienceCertifications = ({
             onClose={handleDrawerClose}
             heading={certificationsMemo?.name}
         >
-            <Box className="EducationAndExperienceCertifications-paragraph">
+            <Box className="education-and-certifications-drawer__paragraph">
                 {certificationsMemo?.organizationName}
             </Box>
 
-            <Box className="EducationAndExperienceCertifications-paragraph">
+            <Box className="education-and-certifications-drawer__paragraph">
                 {formattedDateMemo}
             </Box>
 
-            <Box className="EducationAndExperienceCertifications-imageGallery">
+            <Box className="education-and-certifications-drawer__image-gallery">
                 <ImageGallery imageSources={certificationsMemo?.imageSources} />
             </Box>
 
@@ -78,7 +78,7 @@ export const EducationAndExperienceCertifications = ({
                 return (
                     <Box
                         as="a"
-                        className="EducationAndExperienceCertifications-link"
+                        className="education-and-certifications-drawer__link"
                         href={element.url}
                         key={index}
                         target="_blank"

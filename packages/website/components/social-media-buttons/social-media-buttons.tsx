@@ -17,7 +17,10 @@ export const SocialMediaButtons = ({
     ...restProps
 }: SocialMediaButtonsPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('SocialMediaButtons', classNameProp)
+        const newClassNameMemo = classNames(
+            'social-media-buttons',
+            classNameProp
+        )
         return newClassNameMemo
     }, [classNameProp])
 

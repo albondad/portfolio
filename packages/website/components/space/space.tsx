@@ -10,7 +10,7 @@ export const Space = ({
     ...restProps
 }: SpacePropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Space', classNameProp)
+        const newClassNameMemo = classNames('space', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

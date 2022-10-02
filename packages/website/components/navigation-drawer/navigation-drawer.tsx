@@ -18,16 +18,20 @@ export const NavigationDrawer = ({
     ...restProps
 }: NavigationDrawerPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('NavigationDrawer', classNameProp, {
-            'NavigationDrawer-isOpenFalse': !isOpenProp,
-            'NavigationDrawer-isOpenTrue': !!isOpenProp,
-        })
+        const newClassNameMemo = classNames(
+            'navigation-drawer',
+            classNameProp,
+            {
+                'navigation-drawer__is-open-false': !isOpenProp,
+                'navigation-drawer__is-open-true': !!isOpenProp,
+            }
+        )
         return newClassNameMemo
     }, [classNameProp, isOpenProp])
 
     useEffect(() => {
         const hasNavigationDrawerOpen = !!document.getElementsByClassName(
-            'NavigationDrawer-isOpenTrue'
+            'navigation-drawer__isOpenTrue'
         )[0]
 
         if (hasNavigationDrawerOpen) {
@@ -47,22 +51,22 @@ export const NavigationDrawer = ({
     return (
         <StyledBox className={classNameMemo} {...restProps}>
             <Box
-                className="NavigationDrawer-overlay"
+                className="navigation-drawer__overlay"
                 onClick={onCloseProp}
             ></Box>
-            <Box className="NavigationDrawer-mainContent">
-                <Box className="NavigationDrawer-constrainedContent">
-                    <Box className="NavigationDrawer-header">
+            <Box className="navigation-drawer__main-content">
+                <Box className="navigation-drawer__constrained-content">
+                    <Box className="navigation-drawer__header">
                         <Box
-                            className="NavigationDrawer-close"
+                            className="navigation-drawer__close"
                             onClick={onCloseProp}
                         >
                             <TeenyiconsCloseIcon />
                         </Box>
                     </Box>
-                    <Box className="NavigationDrawer-body">
+                    <Box className="navigation-drawer__body">
                         <Box
-                            className="NavigationDrawer-link"
+                            className="navigation-drawer__link"
                             as="a"
                             href="/pdfs/al-bondad-resume.pdf"
                             target="_blank"
@@ -70,7 +74,7 @@ export const NavigationDrawer = ({
                             Resume
                         </Box>
                         <Box
-                            className="NavigationDrawer-link"
+                            className="navigation-drawer__link"
                             onClick={() => {
                                 handleLinkClick({ url: '#work-experience' })
                             }}
@@ -78,7 +82,7 @@ export const NavigationDrawer = ({
                             Work Experience
                         </Box>
                         <Box
-                            className="NavigationDrawer-link"
+                            className="navigation-drawer__link"
                             onClick={() => {
                                 handleLinkClick({
                                     url: '#education-and-certifications',
@@ -88,7 +92,7 @@ export const NavigationDrawer = ({
                             Education and Certifications
                         </Box>
                         <Box
-                            className="NavigationDrawer-link"
+                            className="navigation-drawer__link"
                             onClick={() => {
                                 handleLinkClick({ url: '#skills' })
                             }}

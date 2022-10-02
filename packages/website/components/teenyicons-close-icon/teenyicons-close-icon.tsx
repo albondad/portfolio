@@ -11,7 +11,7 @@ export const TeenyiconsCloseIcon = ({
 }: TeenyiconsCloseIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsCloseIcon',
+            'teenyicons-close-icon',
             classNameProp
         )
         return newClassNameMemo

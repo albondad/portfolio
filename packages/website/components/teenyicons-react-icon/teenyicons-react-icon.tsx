@@ -11,7 +11,7 @@ export const TeenyiconsReactIcon = ({
 }: TeenyiconsReactIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsReactIcon',
+            'teenyicons-react-icon',
             classNameProp
         )
         return newClassNameMemo

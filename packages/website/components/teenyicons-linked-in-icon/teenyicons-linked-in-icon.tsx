@@ -13,7 +13,7 @@ export const TeenyiconsLinkedInIcon = ({
 }: TeenyiconsLinkedInIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsLinkedInIcon',
+            'teenyicons-linked-in-icon',
             classNameProp
         )
         return newClassNameMemo

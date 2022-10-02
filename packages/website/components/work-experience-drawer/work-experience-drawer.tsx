@@ -18,7 +18,7 @@ export const WorkExperienceDrawer = ({
 
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'WorkExperienceDrawer',
+            'work-experience-drawer',
             classNameProp,
             {}
         )
@@ -66,31 +66,39 @@ export const WorkExperienceDrawer = ({
             onClose={handleDrawerClose}
             heading={workExperienceMemo?.organization}
         >
-            <Box className="WorkExperienceDrawer-paragraph">
+            <Box className="work-experience-drawer__paragraph">
                 {workExperienceMemo?.title}
             </Box>
-            <Box className="WorkExperienceDrawer-paragraph">
+            <Box className="work-experience-drawer__paragraph">
                 {formattedDateMemo}
             </Box>
-            <Box className="WorkExperienceDrawer-imageGallery">
+            <Box className="work-experience-drawer__image-gallery">
                 <ImageGallery imageSources={workExperienceMemo?.imageSources} />
             </Box>
-            <Box className="WorkExperienceDrawer-heading">A Bit of Context</Box>
-            <Box className="WorkExperienceDrawer-paragraph">
+            <Box className="work-experience-drawer__heading">
+                A Bit of Context
+            </Box>
+            <Box className="work-experience-drawer__paragraph">
                 {workExperienceMemo?.description}
             </Box>
-            <Box className="WorkExperienceDrawer-heading">What I Did</Box>
+            <Box className="work-experience-drawer__heading">What I Did</Box>
             {workExperienceMemo?.responsibilities.map((element, index) => {
                 return (
-                    <Box key={index} className="WorkExperienceDrawer-paragraph">
+                    <Box
+                        key={index}
+                        className="work-experience-drawer__paragraph"
+                    >
                         - {element}
                     </Box>
                 )
             })}
-            <Box className="WorkExperienceDrawer-heading">Skills Used</Box>{' '}
+            <Box className="work-experience-drawer__heading">Skills Used</Box>{' '}
             {workExperienceMemo?.skills.map((element, index) => {
                 return (
-                    <Box key={index} className="WorkExperienceDrawer-paragraph">
+                    <Box
+                        key={index}
+                        className="work-experience-drawer__paragraph"
+                    >
                         - {element}
                     </Box>
                 )

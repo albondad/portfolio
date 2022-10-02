@@ -6,7 +6,7 @@ export const StyledBox = styled(Box)`
     background-color: #000000;
     padding: 4rem 0;
 
-    .HeroHeader-constrainedContent {
+    .hero-header__constrained-content {
       display: flex;
       gap: 1.25rem;
       flex-direction: column;
@@ -17,7 +17,7 @@ export const StyledBox = styled(Box)`
         flex-direction: row;
       }
 
-      .HeroHeader-image {
+      .hero-header__image {
         background-color: #cccccc;
         border-radius: 0.5rem;
         height: 12rem;
@@ -26,7 +26,7 @@ export const StyledBox = styled(Box)`
         width: 12rem;
       }
 
-      .HeroHeader-heading {
+      .hero-header__heading {
         color: #ffffff;
         font-size: 1.5rem;
         font-weight: 700;max
@@ -39,7 +39,7 @@ export const StyledBox = styled(Box)`
         }
       }
 
-      .HeroHeader-description {
+      .hero-header__description {
         color: #ffffff;
         font-size: 1.125rem;
         line-height: 1.5em;
@@ -53,7 +53,7 @@ export const StyledBox = styled(Box)`
         }
       }
 
-      .HeroHeader-actions {
+      .hero-header__actions {
         color: #ffffff;
         display: flex;
         margin-left: unset;

@@ -1,4 +1,4 @@
-import { Box, TeenyiconsTextDocumentIcon } from '..'
+import { Box } from '..'
 import { StyledBox } from './skill.styled-components'
 import classNames from 'classnames'
 import React, { ComponentProps, useMemo, ReactNode } from 'react'
@@ -15,14 +15,14 @@ export const Skill = ({
     ...restProps
 }: SkillPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Skill', classNameProp)
+        const newClassNameMemo = classNames('skill', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <Box className="Skill-icon">{iconProp}</Box>
-            <Box className="Skill-label">{labelProp}</Box>
+            <Box className="skill__icon">{iconProp}</Box>
+            <Box className="skill__label">{labelProp}</Box>
         </StyledBox>
     )
 }

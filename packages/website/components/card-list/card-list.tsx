@@ -17,18 +17,18 @@ export const CardList = ({
     ...restProps
 }: CardListPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('CardList', classNameProp)
+        const newClassNameMemo = classNames('card-list', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <ConstrainedContent className="CardList-mainContent">
-                <Box className="CardList-heading">{headingProp}</Box>
-                <Box className="CardList-list">
+            <ConstrainedContent className="card-list__mainContent">
+                <Box className="card-list__heading">{headingProp}</Box>
+                <Box className="card-list__list">
                     {itemsProp.map((element) => {
                         return (
-                            <Box key={element.key} className="CardList-item">
+                            <Box key={element.key} className="card-list__item">
                                 <Card {...element} />
                             </Box>
                         )

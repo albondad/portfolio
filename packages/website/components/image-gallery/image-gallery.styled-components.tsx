@@ -3,7 +3,7 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
-        .ImageGallery-image {
+        .image-gallery__image {
             backgorund-color: #eeeeee;
             border-radius: 0.5rem;
             overflow: hidden;
@@ -12,13 +12,13 @@ export const StyledBox = styled(Box)`
             width: 100%;
         }
 
-        .ImageGallery-items {
+        .image-gallery__items {
             display: flex;
             flex-wrap: wrap;
             margin-top: 1.25rem;
             gap: 1.25rem;
 
-            .ImageGallery-item {
+            .image-gallery__item {
                 cursor: pointer;
                 filter: saturate(0.5);
                 transition: opacity 250ms, transform 250ms, filter 250ms;
@@ -30,14 +30,14 @@ export const StyledBox = styled(Box)`
                 }
             }
 
-            .ImageGallery-item.ImageGallery-isDisabledFalse {
+            .image-gallery__item.image-gallery__is-disabled-false {
                 :hover {
                     filter: saturate(1);
                     transform: scale(1.05);
                 }
             }
 
-            .ImageGallery-item.ImageGallery-isDisabledTrue {
+            .image-gallery__item.image-gallery__is-disabled-true {
                 filter: saturate(0);
                 opacity: 0.5;
                 pointer-events: none;

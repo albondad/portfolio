@@ -13,7 +13,7 @@ export const TeenyiconsArrowLeftSmallIcon = ({
 }: TeenyiconsArrowLeftSmallIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsArrowLeftIcon',
+            'teenyicons-arrow-left-small-icon',
             classNameProp
         )
         return newClassNameMemo

@@ -1,4 +1,4 @@
-import { StyledBox } from './teenyicons-teenyicons-nodejs-icon.styled-components'
+import { StyledBox } from './teenyicons-nodejs-icon.styled-components'
 import { SvgIcon } from '..'
 import classNames from 'classnames'
 import React, { ComponentProps, useMemo } from 'react'
@@ -13,7 +13,7 @@ export const TeenyiconsNodejsIcon = ({
 }: TeenyiconsNodejsIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsNodejsIcon',
+            'teenyicons-nodejs-icon',
             classNameProp
         )
         return newClassNameMemo

@@ -2,21 +2,21 @@ import styled from 'styled-components'
 import { Box } from '..'
 
 export const StyledBox = styled(Box)`
-    & .CardList-mainContent {
-        .CardList-heading {
+    & .card-list__mainContent {
+        .card-list__heading {
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 1.5em;
             overflow: hidden;
         }
 
-        .CardList-list {
+        .card-list__list {
             display: flex;
             gap: 1.25rem;
             flex-wrap: wrap;
             margin-top: 1.25rem;
 
-            .CardList-item {
+            .card-list__item {
                 width: 100%;
 
                 @media screen and (min-width: ${(props) =>

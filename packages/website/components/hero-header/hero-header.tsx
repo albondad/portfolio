@@ -12,14 +12,14 @@ export const HeroHeader = ({
     ...restProps
 }: HeroHeaderPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('HeroHeader', classNameProp)
+        const newClassNameMemo = classNames('hero-header', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <ConstrainedContent className="HeroHeader-constrainedContent">
-                <Box className="HeroHeader-image">
+            <ConstrainedContent className="hero-header__constrained-content">
+                <Box className="hero-header__image">
                     <Image
                         src={portaitImage}
                         layout="fill"
@@ -27,9 +27,11 @@ export const HeroHeader = ({
                     />
                 </Box>
 
-                <Box className="HeroHeader-text">
-                    <Box className="HeroHeader-heading">SOFTWARE DEVELOPER</Box>
-                    <Box className="HeroHeader-description">
+                <Box className="hero-header__text">
+                    <Box className="hero-header__heading">
+                        SOFTWARE DEVELOPER
+                    </Box>
+                    <Box className="hero-header__description">
                         Hi there, thanks for dropping by! A little bit about me,
                         I’m a web developer based in Illinois with a couple
                         years of experience. I’ve worked as a software developer
@@ -39,7 +41,7 @@ export const HeroHeader = ({
                     </Box>
                 </Box>
 
-                <Box className="HeroHeader-actions">
+                <Box className="hero-header__actions">
                     <SocialMediaButtons>test</SocialMediaButtons>
                 </Box>
             </ConstrainedContent>

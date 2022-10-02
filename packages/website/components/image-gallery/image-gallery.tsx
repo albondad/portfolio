@@ -14,7 +14,7 @@ export const ImageGallery = ({
     ...restProps
 }: ImageGalleryPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('ImageGallery', classNameProp)
+        const newClassNameMemo = classNames('image-gallery', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
@@ -22,9 +22,9 @@ export const ImageGallery = ({
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <Box className="ImageGallery-main">
+            <Box className="image-gallery__main">
                 {!!imageSourcesProp[0] && (
-                    <Box className="ImageGallery-image">
+                    <Box className="image-gallery__image">
                         <Image
                             src={imageSourcesProp[currentIndexState]}
                             layout="fill"
@@ -32,16 +32,16 @@ export const ImageGallery = ({
                     </Box>
                 )}
             </Box>
-            <Box className="ImageGallery-items">
+            <Box className="image-gallery__items">
                 {imageSourcesProp.map((element, index) => {
                     const handleItemClick = () => {
                         setCurrentIndexState(index)
                     }
 
-                    const itemClassName = classNames('ImageGallery-item', {
-                        'ImageGallery-isDisabledTrue':
+                    const itemClassName = classNames('image-gallery__item', {
+                        'image-gallery__-is-disabled-true':
                             currentIndexState === index,
-                        'ImageGallery-isDisabledFalse':
+                        'image-gallery__is-disabled-false':
                             currentIndexState !== index,
                     })
 
@@ -51,7 +51,7 @@ export const ImageGallery = ({
                             key={index}
                             onClick={handleItemClick}
                         >
-                            <Box className="ImageGallery-image">
+                            <Box className="image-gallery__image">
                                 <Image src={element} layout="fill" />
                             </Box>
                         </Box>

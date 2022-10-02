@@ -5,7 +5,7 @@ export const StyledBox = styled(Box)`
     & {
         background-color: #000000;
 
-        .Footer-constrainedContent {
+        .footer__constrained-content {
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -19,12 +19,12 @@ export const StyledBox = styled(Box)`
                 gap: 0;
             }
 
-            .Footer-heading {
+            .footer__heading {
                 color: #ffffff;
                 font-size: 1.5rem;
             }
 
-            .Footer-actions {
+            .footer__actions {
                 @media screen and (min-width: ${(props) =>
                         props.theme.smallBreakpoint}) {
                     margin-left: auto;

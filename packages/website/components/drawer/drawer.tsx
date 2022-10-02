@@ -19,16 +19,17 @@ export const Drawer = ({
     ...restProps
 }: DrawerPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Drawer', classNameProp, {
-            'Drawer-isOpenFalse': !isOpenProp,
-            'Drawer-isOpenTrue': !!isOpenProp,
+        const newClassNameMemo = classNames('drawer', classNameProp, {
+            'drawer--is-open-false': !isOpenProp,
+            'drawer--is-open-true': !!isOpenProp,
         })
         return newClassNameMemo
     }, [classNameProp, isOpenProp])
 
     useEffect(() => {
-        const hasDrawerOpen =
-            !!document.getElementsByClassName('Drawer-isOpenTrue')[0]
+        const hasDrawerOpen = !!document.getElementsByClassName(
+            'drawer--is-open-true'
+        )[0]
 
         if (hasDrawerOpen) {
             document.body.style.overflow = 'hidden'
@@ -38,36 +39,20 @@ export const Drawer = ({
     }, [isOpenProp])
 
     return (
-        <CSSTransition
-            in={true}
-            timeout={200}
-            classNames={{
-                enter: 'Drawer-transitionEnter',
-                enterActive: 'Drawer-transitionActiveEnter',
-                enterDone: 'Drawer-transitionEnterDone',
-                exit: 'Drawer-transitionExit',
-                exitActive: 'Drawer-transitionExitActive',
-                exitDone: 'Drawer-transitionExitDone',
-            }}
-        >
-            <StyledBox className={classNameMemo} {...restProps}>
-                <Box className="Drawer-overlay" onClick={onCloseProp}></Box>
-                <Box className="Drawer-mainContent">
-                    <Box className="Drawer-constrainedContent">
-                        <Box className="Drawer-header">
-                            <Box className="Drawer-heading">{headingProp}</Box>
-                            <Box
-                                className="Drawer-goBack"
-                                onClick={onCloseProp}
-                            >
-                                <TeenyiconsArrowLeftSmallIcon className="Drawer-icon" />
-                                Go Back
-                            </Box>
+        <StyledBox className={classNameMemo} {...restProps}>
+            <Box className="drawer__overlay" onClick={onCloseProp}></Box>
+            <Box className="drawer__main-content">
+                <Box className="drawer__constrained-content">
+                    <Box className="drawer__header">
+                        <Box className="drawer__heading">{headingProp}</Box>
+                        <Box className="drawer__go-back" onClick={onCloseProp}>
+                            <TeenyiconsArrowLeftSmallIcon className="drawer__icon" />
+                            Go Back
                         </Box>
-                        <Box className="Drawer-body">{childrenProp}</Box>
                     </Box>
+                    <Box className="drawer__body">{childrenProp}</Box>
                 </Box>
-            </StyledBox>
-        </CSSTransition>
+            </Box>
+        </StyledBox>
     )
 }

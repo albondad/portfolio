@@ -27,67 +27,67 @@ export const SkillList = ({
     ...restProps
 }: SkillListPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('SkillList', classNameProp)
+        const newClassNameMemo = classNames('skill-list__', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps} id="skills">
-            <ConstrainedContent className="SkillList-constrainedContent">
-                <Box className="SkillList-heading">{headingProp}</Box>
-                <Box className="SkillList-list">
-                    <Box className="SkillList-item">
+            <ConstrainedContent className="skill-list__constrained-content">
+                <Box className="skill-list__heading">{headingProp}</Box>
+                <Box className="skill-list__list">
+                    <Box className="skill-list__item">
                         <Skill label="React" icon={<TeenyiconsReactIcon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill
                             label="Material UI"
                             icon={<TeenyiconsCodeIcon />}
                         />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill
                             label="Semantic UI"
                             icon={<TeenyiconsCodeIcon />}
                         />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill
                             label="Node.js"
                             icon={<TeenyiconsNodejsIcon />}
                         />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="Express" icon={<TeenyiconsCodeIcon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="MongoDB" icon={<TeenyiconsMongodb />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill
                             label="Javascript"
                             icon={<TeenyiconsJavascriptIcon />}
                         />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill
                             label="Typescript"
                             icon={<TeenyiconsTypescriptIcon />}
                         />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="HTML" icon={<TeenyiconsHtml5Icon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="CSS" icon={<TeenyiconsCss3Icon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="Git" icon={<TeenyiconsGitIcon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="Figma" icon={<TeenyiconsFigmaIcon />} />
                     </Box>
-                    <Box className="SkillList-item">
+                    <Box className="skill-list__item">
                         <Skill label="Adobe XD" icon={<TeenyiconsCodeIcon />} />
                     </Box>
                 </Box>

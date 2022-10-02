@@ -8,7 +8,6 @@ import {
     Space,
     WorkExperienceCardList,
     WorkExperienceDrawer,
-    NavigationDrawer,
 } from '..'
 import React, { ReactNode, Fragment } from 'react'
 

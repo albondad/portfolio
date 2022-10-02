@@ -20,13 +20,13 @@ export const Card = ({
     ...restProps
 }: CardPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Card', classNameProp)
+        const newClassNameMemo = classNames('card', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <Box className="Card-image" src={imageSourceProp}>
+            <Box className="card__image" src={imageSourceProp}>
                 {imageSourceProp && (
                     <Image
                         alt="image"
@@ -36,14 +36,10 @@ export const Card = ({
                     />
                 )}
             </Box>
-            <Box className="Card-heading">{headingProp}</Box>
-            <Box className="Card-details">
+            <Box className="card__heading">{headingProp}</Box>
+            <Box className="card__details">
                 {detailsProp.map((element, index) => {
-                    return (
-                        <Box key={index} className="Card-detailItem">
-                            {element}
-                        </Box>
-                    )
+                    return <Box key={index}>{element}</Box>
                 })}
             </Box>
         </StyledBox>

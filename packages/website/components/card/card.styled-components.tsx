@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Box } from '..'
 
 export const StyledBox = styled(Box)`
-    & .Card-image {
+    & .card__image {
         filter: saturate(0.25);
         cursor: pointer;
         background-color: #eeeeee;
@@ -18,14 +18,14 @@ export const StyledBox = styled(Box)`
         }
     }
 
-    & .Card-heading {
+    & .card__heading {
         font-size: 1.125rem;
         font-weight: 700;
         line-height: 1.5em;
         margin-top: 0.75rem;
     }
 
-    & .Card-details {
+    & .card__details {
         font-size: 1rem;
         line-height: 1.5em;
         overflow: hidden;

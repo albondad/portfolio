@@ -1,5 +1,4 @@
-import { Box } from '..'
-import { StyledBox } from './button-bar.styled-components'
+import { StyledBox } from './button.styled-components'
 import classNames from 'classnames'
 import React, { ComponentProps, useMemo } from 'react'
 
@@ -10,7 +9,7 @@ export const Button = ({
     ...restProps
 }: ButtonPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Button', classNameProp)
+        const newClassNameMemo = classNames('button', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

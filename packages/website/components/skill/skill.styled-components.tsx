@@ -8,7 +8,8 @@ export const StyledBox = styled(Box)`
         justify-content: center;
         flex-direction: column;
         width: 4rem;
-        .Skill-icon {
+
+        .skill__icon {
             background-color: #000000;
             padding: 1rem;
             border-radius: 0.5rem;
@@ -24,7 +25,7 @@ export const StyledBox = styled(Box)`
             }
         }
 
-        .Skill-label {
+        .skill__label {
             font-size: 1rem;
             margin-top: 0.5rem;
             text-align: center;

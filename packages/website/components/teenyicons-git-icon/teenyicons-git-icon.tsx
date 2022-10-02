@@ -11,7 +11,7 @@ export const TeenyiconsGitIcon = ({
 }: TeenyiconsGitIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsHtml5ITeenyiconsGitIconcon',
+            'teenyicons-git-icon',
             classNameProp
         )
         return newClassNameMemo

@@ -9,7 +9,7 @@ export const Box = ({
     ...restProps
 }: BoxPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Box', classNameProp)
+        const newClassNameMemo = classNames('box', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 

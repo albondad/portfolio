@@ -3,27 +3,27 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
-        .NavigationBar-errorMessage {
+        .navigation-bar__errorMessage {
             background-color: #ff312e;
             color: #ffffff;
             padding: 1rem;
             text-align: center;
         }
-        .NavigationBar-constrainedContent {
+        .navigation-bar__constrained-content {
             align-items: center;
             border-radius: 0 0 0.5rem 0.5rem;
             display: flex;
             height: 4rem;
         }
 
-        .NavigationBar-logo {
+        .navigation-bar__logo {
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 1.5em;
             margin-right: auto;
         }
 
-        .NavigationBar-menu {
+        .navigation-bar__menu {
             display: block;
             @media screen and (min-width: ${(props) =>
                     props.theme.mediumBreakpoint}) {
@@ -31,7 +31,7 @@ export const StyledBox = styled(Box)`
             }
         }
 
-        .NavigationBar-links {
+        .navigation-bar__links {
             display: none;
             gap: 3rem;
             margin-left: auto;
@@ -41,7 +41,7 @@ export const StyledBox = styled(Box)`
                 display: flex;
             }
 
-            .NavigationBar-item {
+            .navigation-bar__item {
                 cursor: pointer;
                 font-size: 1rem;
                 line-height: 1.5em;

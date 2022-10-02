@@ -32,25 +32,19 @@ export const NavigationBar = ({
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            {/* <Box className="NavigationBar-errorMessage">
-                <ConstrainedContent>
-                    Thanks for dropping by! This site is still in development so
-                    expect bug fixes and design changes in the future.
-                </ConstrainedContent>
-            </Box> */}
-            <ConstrainedContent className="NavigationBar-constrainedContent">
-                <Box className="NavigationBar-logo">AL BONDAD</Box>
-                <Box className="NavigationBar-links">
+            <ConstrainedContent className="navigation-bar__constrained-content">
+                <Box className="navigation-bar__logo">AL BONDAD</Box>
+                <Box className="navigation-bar__links">
                     <Box
                         as="a"
-                        className="NavigationBar-item"
+                        className="navigation-bar__item"
                         href="/pdfs/al-bondad-resume.pdf"
                         target="_blank"
                     >
                         Resume
                     </Box>
                 </Box>
-                <Box className="NavigationBar-menu" onClick={handleMenuClick}>
+                <Box className="navigation-bar__menu" onClick={handleMenuClick}>
                     <TeenyiconsMenuIcon />
                 </Box>
             </ConstrainedContent>

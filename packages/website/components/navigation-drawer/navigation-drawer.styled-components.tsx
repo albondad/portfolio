@@ -3,7 +3,7 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
-        .NavigationDrawer-overlay {
+        .navigation-drawer__overlay {
             background-color: #000000;
             cursor: pointer;
             height: 100vh;
@@ -20,7 +20,7 @@ export const StyledBox = styled(Box)`
             }
         }
 
-        .NavigationDrawer-mainContent {
+        .navigation-drawer__main-content {
             background-color: #ffffff;
             height: 100vh;
             left: 0;
@@ -31,17 +31,17 @@ export const StyledBox = styled(Box)`
             z-index: 10;
             border-radius: 0 0.5rem 0.5rem 0;
 
-            .NavigationDrawer-constrainedContent {
+            .navigation-drawer__constrained-content {
                 margin-left: auto;
                 margin-right: auto;
                 padding: 2rem;
                 width: 100%;
 
-                .NavigationDrawer-header {
+                .navigation-drawer__header {
                     display: flex;
                     justify-content: flex-end;
 
-                    .NavigationDrawer-close {
+                    .navigation-drawer__close {
                         transition: 200ms;
 
                         :hover {
@@ -50,8 +50,8 @@ export const StyledBox = styled(Box)`
                     }
                 }
 
-                .NavigationDrawer-body {
-                    .NavigationDrawer-link {
+                .navigation-drawer__body {
+                    .navigation-drawer__link {
                         display: block;
                         font-size: 1.125rem;
                         line-height: 1.5em;
@@ -62,11 +62,11 @@ export const StyledBox = styled(Box)`
         }
     }
 
-    &.NavigationDrawer-isOpenFalse {
+    &.navigation-drawer__is-open-false {
         display: none;
     }
 
-    &.NavigationDrawer-isOpenTrue {
+    &.navigation-drawer__is-open-true {
         display: block;
 
         @media screen and (min-width: ${(props) =>

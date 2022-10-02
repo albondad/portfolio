@@ -4,24 +4,24 @@ import { ImageGallery } from '..'
 
 export const StyledDrawer = styled(Drawer)`
     & {
-        .EducationAndExperienceCertifications-imageGallery {
+        .education-and-certifications-drawer__image-gallery {
             margin-top: 1.25rem;
         }
 
-        .EducationAndExperienceCertifications-heading {
+        .education-and-certifications-drawer__heading {
             font-size: 1.25rem;
             font-weight: 700;
             margin-top: 1.5rem;
             line-height: 1.5em;
         }
 
-        .EducationAndExperienceCertifications-paragraph {
+        .education-and-certifications-drawer__paragraph {
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.5em;
         }
 
-        .EducationAndExperienceCertifications-link {
+        .education-and-certifications-drawer__link {
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.5em;

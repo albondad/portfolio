@@ -10,7 +10,10 @@ export const TeenyiconsCss3Icon = ({
     ...restProps
 }: TeenyiconsCss3IconPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('TeenyiconsCss3Icon', classNameProp)
+        const newClassNameMemo = classNames(
+            'teenyicons-css3-icon',
+            classNameProp
+        )
         return newClassNameMemo
     }, [classNameProp])
 

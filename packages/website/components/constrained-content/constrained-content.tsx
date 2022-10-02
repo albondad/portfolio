@@ -9,7 +9,10 @@ export const ConstrainedContent = ({
     ...restProps
 }: ConstrainedContentPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('ConstrainedContent', classNameProp)
+        const newClassNameMemo = classNames(
+            'constrained-content',
+            classNameProp
+        )
         return newClassNameMemo
     }, [classNameProp])
 

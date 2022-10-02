@@ -10,7 +10,10 @@ export const TeenyiconsMongodb = ({
     ...restProps
 }: TeenyiconsMongodbPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('TeenyiconsMongodb', classNameProp)
+        const newClassNameMemo = classNames(
+            'teenyicons-mongodb-icon',
+            classNameProp
+        )
         return newClassNameMemo
     }, [classNameProp])
 

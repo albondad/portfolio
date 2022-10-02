@@ -11,7 +11,7 @@ export const TeenyiconsFigmaIcon = ({
 }: TeenyiconsFigmaIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsFigmaIcon',
+            'teenyicons-figma-icon',
             classNameProp
         )
         return newClassNameMemo

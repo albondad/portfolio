@@ -10,15 +10,15 @@ export const Footer = ({
     ...restProps
 }: FooterPropsType) => {
     const classNameMemo = useMemo(() => {
-        const newClassNameMemo = classNames('Footer', classNameProp)
+        const newClassNameMemo = classNames('footer', classNameProp)
         return newClassNameMemo
     }, [classNameProp])
 
     return (
         <StyledBox className={classNameMemo} {...restProps}>
-            <ConstrainedContent className="Footer-constrainedContent">
-                <Box className="Footer-heading">{"Let's Connect"}</Box>
-                <Box className="Footer-actions">
+            <ConstrainedContent className="footer__constrained-content">
+                <Box className="footer__heading">{"Let's Connect"}</Box>
+                <Box className="footer__actions">
                     <SocialMediaButtons />
                 </Box>
             </ConstrainedContent>

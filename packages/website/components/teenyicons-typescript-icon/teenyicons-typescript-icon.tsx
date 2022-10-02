@@ -13,7 +13,7 @@ export const TeenyiconsTypescriptIcon = ({
 }: TeenyiconsTypescriptIconPropsType) => {
     const classNameMemo = useMemo(() => {
         const newClassNameMemo = classNames(
-            'TeenyiconsHtml5ITeenyiconsTypescriptIconcon',
+            'teenyicons-typescript-icon',
             classNameProp
         )
         return newClassNameMemo

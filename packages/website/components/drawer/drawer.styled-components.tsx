@@ -3,7 +3,7 @@ import { Box } from '..'
 
 export const StyledBox = styled(Box)`
     & {
-        .Drawer-overlay {
+        .drawer__overlay {
             background-color: #000000;
             cursor: pointer;
             height: 100vh;
@@ -20,7 +20,7 @@ export const StyledBox = styled(Box)`
             }
         }
 
-        .Drawer-mainContent {
+        .drawer__main-content {
             background-color: #ffffff;
             height: calc(100vh - 8rem);
             left: 0;
@@ -31,7 +31,7 @@ export const StyledBox = styled(Box)`
             z-index: 10;
             border-radius: 0.5rem 0.5rem 0 0;
 
-            .Drawer-constrainedContent {
+            .drawer__constrained-content {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: calc(62.5rem - 4rem);
@@ -44,7 +44,7 @@ export const StyledBox = styled(Box)`
                 }
             }
 
-            .Drawer-header {
+            .drawer__header {
                 align-items: flex-start;
                 display: flex;
                 flex-direction: column-reverse;
@@ -60,13 +60,13 @@ export const StyledBox = styled(Box)`
                     flex-direction: row;
                 }
 
-                .Drawer-heading {
+                .drawer__heading {
                     font-size: 1.5rem;
                     font-weight: 700;
                     line-height: 1.5em;
                 }
 
-                .Drawer-goBack {
+                .drawer__go-back {
                     align-items: center;
                     cursor: pointer;
                     display: flex;
@@ -84,7 +84,7 @@ export const StyledBox = styled(Box)`
                         margin-left: auto;
                     }
 
-                    .Drawer-icon {
+                    .drawer__icon {
                         margin-right: 0.125rem;
                     }
                 }
@@ -92,11 +92,11 @@ export const StyledBox = styled(Box)`
         }
     }
 
-    &.Drawer-isOpenFalse {
+    &.drawer--is-open-false {
         display: none;
     }
 
-    &.Drawer-isOpenTrue {
+    &.drawer--is-open-true {
         display: block;
     }
 `
