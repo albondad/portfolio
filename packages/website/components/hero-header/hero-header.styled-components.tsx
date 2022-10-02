@@ -20,11 +20,18 @@ export const StyledBox = styled(Box)`
       .hero-header__image {
         background-color: #cccccc;
         border-radius: 0.5rem;
+        filter: grayscale(1);
         height: 12rem;
         overflow: hidden;
         position: relative;
         width: 12rem;
+        transition: filter 200ms;
+
+        :hover {
+          filter: grayscale(0);
+        }
       }
+
 
       .hero-header__heading {
         color: #ffffff;

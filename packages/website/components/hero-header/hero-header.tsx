@@ -21,7 +21,7 @@ export const HeroHeader = ({
             <ConstrainedContent className="hero-header__constrained-content">
                 <Box className="hero-header__image">
                     <Image
-                        src={portaitImage}
+                        src="/images/portrait.png"
                         layout="fill"
                         alt="portait image"
                     />
