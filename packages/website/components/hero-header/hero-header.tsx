@@ -32,12 +32,12 @@ export const HeroHeader = ({
                         SOFTWARE DEVELOPER
                     </Box>
                     <Box className="hero-header__description">
-                        Hi there, thanks for dropping by! A little bit about me,
-                        I’m a web developer based in Illinois with a couple
+                        Hello there, thank you for dropping by! I’m a web
+                        developer based in Illinois with over two and a half
                         years of experience. I’ve worked as a software developer
                         in small companies, startups, and organizations, both
-                        full time, and as contracted developer, and would be
-                        looking forward to working with you!
+                        full time, part-time, and as a contracted developer, and
+                        would be looking forward to working with you!
                     </Box>
                 </Box>
 
